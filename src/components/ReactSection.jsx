@@ -5,10 +5,10 @@ function ProjectCard({ title, description, Codelink, Sitelink }) {
     <div className="bg-gray-100 p-6 rounded-lg shadow-md">
       <h3 className="text-xl font-semibold mb-4">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
-      {/* <div className="link flex justify-between items-center">
+      <div className="link flex justify-between items-center">
         <a href={Codelink} className="text-blue-500 hover:underline">Source Code</a> 
         <a href={Sitelink} className="text-blue-500 hover:underline">View Site</a> 
-      </div> */}
+      </div>
       
     </div>
   );
