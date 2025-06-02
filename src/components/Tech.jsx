@@ -10,11 +10,12 @@ import Node from '../assets/Node.js.png';
 import npm from '../assets/NPM.png'
 import Tailwind from '../assets/Tailwind.png';
 import Vite from '../assets/Vite.js.png';
+import '../index.css'
 
 function TechItem({ src, alt, name }) {
   return (
-    <div className="tech-item">
-      <div className="flex flex-col items-center">
+    <div className="tech-item  p-1 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+      <div className="flex flex-col items-center justify-center hover:scale-105 transition-transform duration-300">
         <img src={src} alt={alt} className="tech-icon w-20 h-20" />
         <p>{name}</p>
       </div>
