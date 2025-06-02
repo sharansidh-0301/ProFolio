@@ -1,4 +1,3 @@
-import './bg.css'
 import Sidh from '../assets/sidh.jpg'
 export const Home = () => {
   return (
