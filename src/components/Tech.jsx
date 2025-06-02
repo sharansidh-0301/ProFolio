@@ -1,4 +1,4 @@
-import Django from '../assets/django.png';
+import Django from '../assets/Django.png';
 import git from '../assets/GitHub.png';
 import Java from '../assets/Java.png';
 import JS from '../assets/JavaScript.png';
