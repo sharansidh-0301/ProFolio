@@ -12,7 +12,7 @@ import Tailwind from '../assets/Tailwind.png';
 import Vite from '../assets/Vite.js.png';
 import Eclipse from '../assets/Eclipse.png';
 import Linux from '../assets/Linux.png';
-import VSCode from '../assets/VSCode.png';
+import Anaconda from '../assets/Anaconda.png';
 
 import '../index.css'
 
@@ -48,7 +48,7 @@ export const Tech = () => {
                 <TechItem src={Vite} alt="Vite.js" name="Vite.js" />
                 <TechItem src={Eclipse} alt="Eclipse" name="Eclipse" />
                 <TechItem src={Linux} alt="Linux" name="Linux" />
-                <TechItem src={VSCode} alt="VS Code" name="VS Code" />
+                <TechItem src={Anaconda} alt="Anaconda" name="Anaconda" />
             </div>
         </div>
     </div>
