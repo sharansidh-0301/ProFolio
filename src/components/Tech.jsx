@@ -10,14 +10,18 @@ import Node from '../assets/Node.js.png';
 import npm from '../assets/NPM.png'
 import Tailwind from '../assets/Tailwind.png';
 import Vite from '../assets/Vite.js.png';
+import Eclipse from '../assets/Eclipse.png';
+import Linux from '../assets/Linux.png';
+import VSCode from '../assets/VSCode.png';
+
 import '../index.css'
 
 function TechItem({ src, alt, name }) {
   return (
-    <div className="tech-item  p-1 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <div className="flex flex-col items-center justify-center hover:scale-105 transition-transform duration-300">
-        <img src={src} alt={alt} className="tech-icon w-20 h-20" />
-        <p>{name}</p>
+    <div className="w-50  bg-emerald-200 tech-item py-2 pr-5 rounded-lg shadow-lg hover:shadow-lg transition-shadow duration-300">
+      <div className=" flex items-center justify-around hover:scale-105 transition-transform duration-300">
+        <img src={src} alt={alt} className=" tech-icon w-13 h-13" />
+        <p className='text-xl'>{name}</p>
       </div>
     </div>
   );
@@ -26,10 +30,10 @@ function TechItem({ src, alt, name }) {
 export const Tech = () => {
   return (
     <>
-    <div className="skill-section">
-        <div className="absolute right-1/20 top-1/7 p-6 rounded-lg shadow-md w-1/2 mx-auto bg-white/30 backdrop-blur-sm ">
-            <h2 className="text-3xl font-bold text-center mb-6">Technologies I Work With</h2>
-            <div className="tech grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="absolute skill-section transform items-center p-15 translate-y-190 w-full">
+        <div className="p-6 rounded-lg  mx-auto  ">
+            <h2 className="text-3xl font-bold text-center mb-20">Technologies I Work With</h2>
+            <div className="tech grid md:grid-cols-2 lg:grid-cols-5 gap-15">
                 <TechItem src={JS} alt="JavaScript" name="JavaScript" />
                 <TechItem src={react} alt="React" name="React" />
                 <TechItem src={Node} alt="Node.js" name="Node.js" />
@@ -42,6 +46,9 @@ export const Tech = () => {
                 <TechItem src={git} alt="GitHub" name="GitHub" />
                 <TechItem src={Java} alt="Java" name="Java" />
                 <TechItem src={Vite} alt="Vite.js" name="Vite.js" />
+                <TechItem src={Eclipse} alt="Eclipse" name="Eclipse" />
+                <TechItem src={Linux} alt="Linux" name="Linux" />
+                <TechItem src={VSCode} alt="VS Code" name="VS Code" />
             </div>
         </div>
     </div>

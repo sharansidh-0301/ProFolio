@@ -1,2 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Amarante&family=Aubrey&family=Comfortaa:wght@300..700&family=Delius+Swash+Caps&family=Lavishly+Yours&family=Revalia&family=Work+Sans:wght@900&display=swap');
 @import "tailwindcss";
 
+.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.delius-swash-caps-regular {
+  font-family: "Delius Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.work-sans-bold {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.comfortaa-weight {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.revalia-regular {
+  font-family: "Revalia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aladin-regular {
+  font-family: "Aladin", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amarante-regular {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aubrey-regular {
+  font-family: "Aubrey", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -5,6 +5,7 @@ import { Tech } from './components/Tech.jsx'
 import { ReactSection } from './components/ReactSection.jsx'
 import './App.css'
 import { Footer } from './components/Footer.jsx'
+import { About } from './components/About.jsx'
 function App() {
  
   return (
@@ -12,7 +13,8 @@ function App() {
            <Bg />
     <NavBar/>
     <Home />
-    {/* <Tech/> */}
+    <About/>
+    <Tech/>
     <ReactSection/>
     <Footer/>
     </>

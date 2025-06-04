@@ -3,7 +3,7 @@ import React from 'react'
 export const Footer = () => {
   return (
     <>
-    <div id='footer' className="footer absolute w-full transform translate-y-300 bg-gray-800 shadow-lg">
+    <div id='footer' className="footer absolute w-full transform translate-y-600 bg-gray-800 shadow-lg">
         <div className="container mx-auto px-4 py-4 text-center">
             <p className="text-gray-400">© 2025 Sharan Sidh. All rights reserved.</p>
             <div className="social-links mt-4">
