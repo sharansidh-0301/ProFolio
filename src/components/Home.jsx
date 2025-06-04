@@ -10,7 +10,7 @@ export const Home = () => {
             <h1 className="text-3xl font-bold text-center mb-2">Hello, I'm Sharan Sidh</h1>
             <p className="text-center text-gray-600 mb-4">A passionate web developer with a knack for creating beautiful and functional websites.</p>
             <div className="flex justify-center space-x-4">
-                <a href="#project" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">View Projects</a>
+                <a href="#project" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">About Me</a>
                 <a href="" className="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 transition duration-300">Contact Me</a>
             </div>
             {/* <div className="section">
