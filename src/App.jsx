@@ -12,7 +12,7 @@ function App() {
            <Bg />
     <NavBar/>
     <Home />
-    <Tech/>
+    {/* <Tech/> */}
     <ReactSection/>
     <Footer/>
     </>
