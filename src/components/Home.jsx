@@ -3,7 +3,7 @@ import Sidh_pdf from '../assets/Sidh.pdf'
 export const Home = () => {
   return (
     <>
-        <div className='absolute lg:top-1/2 lg:mt-9 lg:left-1/4 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 bg-white/30 backdrop-blur-sm rounded-lg shadow-lg p-8 max-w-md tarnsform translate-x-10 translate-y-10'>
+        <div className=' bg-white/30 backdrop-blur-sm rounded-lg shadow-lg p-8 max-w-md'>
          <div className="body ">
             <div className="flex items-center justify-center mb-6 ">
                 <img src={Sidh} alt="Profile" className=" rounded-md " />

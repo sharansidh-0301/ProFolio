@@ -10,13 +10,25 @@ function App() {
  
   return (
     <>
-           <Bg />
+    <Bg />
     <NavBar/>
-    <Home />
-    <About/>
+    <div className='absolute flex lg:flex-row lg:left-25 lg:top-30 md:flex-col sm:items-center sm:top-30 sm:flex-col'>
+      <div className="">
+            <Home />
+      </div>
+      <div className="lg:px-30 sm:mt-20 sm:p-10">    
+        <About/>
+      </div>
+    </div>
+    <div className='absolute lg:top-200 sm:top-350 lg:px-30 sm:px-30 w-full'>
     <Tech/>
+    </div>
+    <div className='absolute lg:top-400 lg:px-10 sm:top-650  sm:w-full sm:px-20'>
     <ReactSection/>
+    </div>
+    <div className='absolute w-full lg:top-600 sm:top-850' >
     <Footer/>
+    </div>
     </>
   )
 }

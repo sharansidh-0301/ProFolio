@@ -16,7 +16,7 @@ function SocialLink({ href, icon, alt }) {
 export const About = () => {
   return (
     <>
-    <div  className="absolute left-170 top-60 text-center">
+    <div  className="text-center">
     <div>
     <p className="work-sans-bold  text-5xl text-yellow-950 border-amber-950 ">Hi, I am SHARAN SIDH</p>
     <p className='mt-3 work-sans-bold text-6xl text-indigo-700 '>Software Developer</p>

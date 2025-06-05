@@ -30,10 +30,10 @@ function TechItem({ src, alt, name }) {
 export const Tech = () => {
   return (
     <>
-    <div className="absolute skill-section transform items-center p-15 translate-y-190 w-full">
+    <div className="skill-section  ">
         <div className="p-6 rounded-lg  mx-auto  ">
             <h2 className="text-3xl font-bold text-center mb-20">Technologies I Work With</h2>
-            <div className="tech grid md:grid-cols-2 lg:grid-cols-5 gap-15">
+            <div className="tech grid md:grid-cols-2 lg:grid-cols-5 sm:grid-cols-2 items-center gap-15">
                 <TechItem src={JS} alt="JavaScript" name="JavaScript" />
                 <TechItem src={react} alt="React" name="React" />
                 <TechItem src={Node} alt="Node.js" name="Node.js" />
@@ -48,7 +48,7 @@ export const Tech = () => {
                 <TechItem src={Vite} alt="Vite.js" name="Vite.js" />
                 <TechItem src={Eclipse} alt="Eclipse" name="Eclipse" />
                 <TechItem src={Linux} alt="Linux" name="Linux" />
-                <TechItem src={Anaconda} alt="Anaconda" name="Anaconda" />
+                <TechItem src={Anaconda} alt="Anaconda" name="Anaconda" />  
             </div>
         </div>
     </div>
