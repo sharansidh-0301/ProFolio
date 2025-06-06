@@ -12,8 +12,8 @@ function App() {
     <>
     <NavBar/>
     <Bg />
-    <div className='absolute flex lg:flex-row lg:left-25 lg:top-30 md:flex-col sm:items-center sm:top-30 sm:flex-col'>
-      <div className="">
+    <div className='absolute flex  lg:flex-row lg:left-25 lg:top-30 md:flex-col sm:items-center sm:top-30 sm:flex-col'>
+      <div className="min480:px-50">
             <Home />
       </div>
       <div className="lg:px-30 sm:mt-20 sm:p-10">    
