@@ -18,14 +18,6 @@ export const Home = () => {
     <>
     
   {modal && (
-    // <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-    //   <div className="bg-white rounded-lg p-6 max-w-md w-full">
-    //     <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-    //     <p className="text-gray-600 mb-4">I am a web developer with a passion for creating beautiful and functional websites. I have experience in various web technologies and love to learn new things.</p>
-    //     <button onClick={toggleModal} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Close</button>
-    //   </div>
-    // </div>
-     
       <div className="fixed inset-0 flex items-center  bg-white/30 backdrop-blur-sm  justify-center z-50">
         <div onClick={toggleModal} className="fixed inset-0 w-full h-full top-0 left-0 right-0 bottom-0"></div>
         <div className="absolute bg-white p-6 max-w-md w-full ">
