@@ -10,8 +10,8 @@ function App() {
  
   return (
     <>
-    <Bg />
     <NavBar/>
+    <Bg />
     <div className='absolute flex lg:flex-row lg:left-25 lg:top-30 md:flex-col sm:items-center sm:top-30 sm:flex-col'>
       <div className="">
             <Home />

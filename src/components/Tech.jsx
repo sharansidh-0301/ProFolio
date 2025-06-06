@@ -30,9 +30,9 @@ function TechItem({ src, alt, name }) {
 export const Tech = () => {
   return (
     <>
-    <div className="skill-section  ">
+    <div className="skill-section " id='tech'>
         <div className="p-6 rounded-lg  mx-auto  ">
-            <h2 className="text-3xl font-bold text-center mb-20">Technologies I Work With</h2>
+            <h2 className="text-3xl font-bold text-center mt-20 mb-20">Technologies I Work With</h2>
             <div className="tech grid md:grid-cols-2 lg:grid-cols-5 sm:grid-cols-2 items-center gap-15">
                 <TechItem src={JS} alt="JavaScript" name="JavaScript" />
                 <TechItem src={react} alt="React" name="React" />
