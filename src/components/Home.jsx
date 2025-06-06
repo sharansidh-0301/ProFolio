@@ -1,6 +1,9 @@
 import Sidh from '../assets/sidh.jpg'
 import Sidh_pdf from '../assets/Sidh.pdf'
 import { useState } from 'react';
+
+
+
 export const Home = () => {
   const [modal, setModal] = useState(false);
   const toggleModal = () => {
