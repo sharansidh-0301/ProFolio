@@ -31,7 +31,7 @@ export const Home = () => {
       </div>
    
   )}
-        <div className=' bg-white/30 backdrop-blur-sm rounded-lg shadow-lg p-8 max-w-md'>
+        <div id='home' className=' bg-white/30 backdrop-blur-sm rounded-lg shadow-lg p-8 max-w-md'>
          <div className="body ">
             <div className="flex items-center justify-center mb-6 ">
                 <img src={Sidh} alt="Profile" className=" rounded-md " />

@@ -18,40 +18,38 @@ import '../index.css'
 
 function TechItem({ src, alt, name }) {
   return (
-    <div className="w-50  bg-emerald-200 tech-item py-2 pr-5 rounded-lg shadow-lg hover:shadow-lg transition-shadow duration-300">
-      <div className=" flex items-center justify-around hover:scale-105 transition-transform duration-300">
-        <img src={src} alt={alt} className=" tech-icon w-13 h-13" />
-        <p className='text-xl'>{name}</p>
-      </div>
+    <div className="bg-emerald-200 py-4 px-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center space-x-4">
+      <img src={src} alt={alt} className="w-12 h-12 object-contain" />
+      <p className="text-lg font-medium">{name}</p>
     </div>
   );
 }
 
 export const Tech = () => {
   return (
-    <>
-    <div className="skill-section " id='tech'>
-        <div className="p-6 rounded-lg  mx-auto  ">
-            <h2 className="text-3xl font-bold text-center mt-20 mb-20">Technologies I Work With</h2>
-            <div className="tech grid md:grid-cols-2 lg:grid-cols-5 sm:grid-cols-2 items-center gap-15">
-                <TechItem src={JS} alt="JavaScript" name="JavaScript" />
-                <TechItem src={react} alt="React" name="React" />
-                <TechItem src={Node} alt="Node.js" name="Node.js" />
-                <TechItem src={npm} alt="NPM" name="NPM" />
-                <TechItem src={Python} alt="Python" name="Python" />
-                <TechItem src={Django} alt="Django" name="Django" />
-                <TechItem src={MongoDB} alt="MongoDB" name="MongoDB" />
-                <TechItem src={MySQL} alt="MySQL" name="MySQL" />
-                <TechItem src={Tailwind} alt="Tailwind CSS" name="Tailwind CSS" />
-                <TechItem src={git} alt="GitHub" name="GitHub" />
-                <TechItem src={Java} alt="Java" name="Java" />
-                <TechItem src={Vite} alt="Vite.js" name="Vite.js" />
-                <TechItem src={Eclipse} alt="Eclipse" name="Eclipse" />
-                <TechItem src={Linux} alt="Linux" name="Linux" />
-                <TechItem src={Anaconda} alt="Anaconda" name="Anaconda" />  
-            </div>
+    <div className="skill-section py-8 px-2 sm:px-4 md:px-8" id="tech">
+      <div className="rounded-lg">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mt-8 mb-8 sm:mt-12 sm:mb-12">
+          Technologies I Work With
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6 lg:gap-8">
+          <TechItem src={JS} alt="JavaScript" name="JavaScript" />
+          <TechItem src={react} alt="React" name="React" />
+          <TechItem src={Node} alt="Node.js" name="Node.js" />
+          <TechItem src={npm} alt="NPM" name="NPM" />
+          <TechItem src={Python} alt="Python" name="Python" />
+          <TechItem src={Django} alt="Django" name="Django" />
+          <TechItem src={MongoDB} alt="MongoDB" name="MongoDB" />
+          <TechItem src={MySQL} alt="MySQL" name="MySQL" />
+          <TechItem src={Tailwind} alt="Tailwind CSS" name="Tailwind CSS" />
+          <TechItem src={git} alt="GitHub" name="GitHub" />
+          <TechItem src={Java} alt="Java" name="Java" />
+          <TechItem src={Vite} alt="Vite.js" name="Vite.js" />
+          <TechItem src={Eclipse} alt="Eclipse" name="Eclipse" />
+          <TechItem src={Linux} alt="Linux" name="Linux" />
+          <TechItem src={Anaconda} alt="Anaconda" name="Anaconda" />
         </div>
+      </div>
     </div>
-    </>
-  )
+  );
 }
