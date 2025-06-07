@@ -18,7 +18,7 @@ function App() {
           <div className="w-full lg:w-1/2 lg:my-10 lg:ml-10 flex justify-center ">
             <Home />
           </div>
-          <div className="w-full lg:w-1/2 lg:mr-30 lg:my-30 flex justify-center">
+          <div className="w-full lg:w-1/2 lg:mr-20 lg:my-30 flex justify-center">
             <About />
           </div>
         </section>

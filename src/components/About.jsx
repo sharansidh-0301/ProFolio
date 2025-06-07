@@ -20,7 +20,7 @@ export const About = () => {
     <div>
     <p className="work-sans-bold  text-5xl text-yellow-950 border-amber-950 ">Hi, I am SHARAN SIDH</p>
     <p className='mt-3 work-sans-bold text-6xl text-indigo-700 '>Software Developer</p>
-    <p className='comfortaa-weight mt-5 text-2xl '>Passionate software developer skilled in building <br /> efficient, scalable applications. Always eager to learn, solve<br /> real-world problems, and create meaningful user experiences.</p>
+    <p className='comfortaa-weight mt-5 text-2xl '>Passionate software developer skilled in building efficient, scalable applications. Always eager to learn, solve real-world problems, and create meaningful user experiences.</p>
     </div>
     
     <div className="flex justify-center mt-5 border-t-2 w-1/2 mx-auto pt-5">
