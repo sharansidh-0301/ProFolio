@@ -2,6 +2,10 @@ import '../App.css';
 import git from '../assets/githubIcon.png';
 import linkedin from '../assets/linkedin.png';
 import gmail from '../assets/gmail.png';
+import React from 'react';
+import { Cursor } from 'react-simple-typewriter';
+import TypeWriter from 'typewriter-effect';
+
 
 function SocialLink({ href, icon, alt }) {
   return (
@@ -13,14 +17,35 @@ function SocialLink({ href, icon, alt }) {
 
 
 
+
 export const About = () => {
+ 
+
+
   return (
     <>
     <div  className="text-center">
     <div>
-    <p className="work-sans-bold  text-5xl text-yellow-950 border-amber-950 ">Hi, I am SHARAN SIDH</p>
-    <p className='mt-3 work-sans-bold text-6xl text-indigo-700 '>Software Developer</p>
+    <p className="work-sans-bold  text-5xl text-yellow-950 border-amber-950 ">Hi, I am SHARAN SIDH </p>
+    <div className='mt-3 work-sans-bold text-6xl text-indigo-700'>
+    <TypeWriter
+    options={{
+      
+      strings: ['Full Stack Developer', 'Software Engineer ', 'Network Engineer ','Cloud Enthusiast '],
+      autoStart: true,
+      loop: true,
+      deleteSpeed: 50,
+      delay: 100,
+      cursor: '#',
+      cursorClassName: 'text-gray-700',
+    }}
+    />  
+    </div>
+    
+    {/* <span className='mt-3 work-sans-bold text-6xl text-indigo-700 '>{text}</span> */}
+    
     <p className='comfortaa-weight mt-5 text-2xl '>Passionate software developer skilled in building efficient, scalable applications. Always eager to learn, solve real-world problems, and create meaningful user experiences.</p>
+    
     </div>
     
     <div className="flex justify-center mt-5 border-t-2 w-1/2 mx-auto pt-5">
