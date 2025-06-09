@@ -13,12 +13,12 @@ import Vite from '../assets/Vite.js.png';
 import Eclipse from '../assets/Eclipse.png';
 import Linux from '../assets/Linux.png';
 import Anaconda from '../assets/Anaconda.png';
-
+import './Tech.css';
 import '../index.css'
 
 function TechItem({ src, alt, name }) {
   return (
-    <div className="bg-emerald-200 py-4 px-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center space-x-4">
+    <div className="tech-box bg-emerald-200 py-4 px-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center space-x-4">
       <img src={src} alt={alt} className="w-12 h-12 object-contain" />
       <p className="text-lg font-medium">{name}</p>
     </div>
