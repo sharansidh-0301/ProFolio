@@ -31,7 +31,7 @@ export const About = () => {
     <TypeWriter
     options={{
       
-      strings: ['Full Stack Developer', 'Software Engineer ', 'Network Engineer ','Cloud Enthusiast '],
+      strings: ['Full Stack Developer', 'Software Engineer', 'Network Engineer','Cloud Enthusiast'],
       autoStart: true,
       loop: true,
       deleteSpeed: 50,
