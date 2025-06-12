@@ -26,20 +26,25 @@ export const About = () => {
     <>
     <div  className="text-center">
     <div>
-    <p className="work-sans-bold  text-5xl text-yellow-950 border-amber-950 ">Hi, I am SHARAN SIDH </p>
-    <div className='mt-3 work-sans-bold text-6xl text-indigo-700'>
-    <TypeWriter
-    options={{
+      <p className='text-lg font-semibold' >Hello, I'm</p>
+    <p className="work-sans-bold  text-5xl text-yellow-950 border-amber-950 ">SHARAN SIDH Jr</p>
+    <div className='mt-3 '>
+      <div className='text-lg font-semibold ' >And I'm a </div>
+   
+      <TypeWriter
+         options={{
+           strings: ['Full Stack Developer', 'Software Engineer', 'Network Engineer','Cloud Enthusiast'],
+           autoStart: true,
+           loop: true,
+           deleteSpeed: 50,
+           delay: 100,
+           cursor: '|',
+           cursorClassName: 'text-gray-700 text-6xl font-semibold',
+           wrapperClassName: 'work-sans-bold  text-5xl inline-block text-indigo-700',
+     }}
+      />
+
       
-      strings: ['Full Stack Developer', 'Software Engineer', 'Network Engineer','Cloud Enthusiast'],
-      autoStart: true,
-      loop: true,
-      deleteSpeed: 50,
-      delay: 100,
-      cursor: '#',
-      cursorClassName: 'text-gray-700',
-    }}
-    />  
     </div>
     
     {/* <span className='mt-3 work-sans-bold text-6xl text-indigo-700 '>{text}</span> */}

@@ -37,8 +37,7 @@ export const Home = () => {
                 <img src={Sidh} alt="Profile" className=" rounded-md " />
             </div>
             <div className="degree text-center mb-4">
-              <hr className='relative w-8 left-22  ' />
-        <p className='aladin-regular text-3xl'> BE - ECE  (Honour)</p>
+        <p className='aladin-regular text-3xl'> <span className=' border-t-2' > BE </span>- ECE  <span className='font-medium' >(Hons)</span></p>
         <p className='aubrey-regular text-3xl'>2022 - 2026  </p>
     </div>
             {/* <h1 className="text-3xl font-bold text-center mb-2">Hello, I'm Sharan Sidh</h1> */}
