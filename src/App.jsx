@@ -34,7 +34,7 @@ function App() {
         </section>
 
         {/* Footer Section */}
-        <section id="footer" className="mt-10 sm:mt-12 md:mt-16">
+        <section id="footer" className="mt-100">
           <Footer />
         </section>
       </main>
