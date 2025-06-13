@@ -26,9 +26,8 @@ This is not just a portfolio—it's a living, breathing showcase of my journey a
 
 ---
 
-## 📸 Achievements Preview
-
-![Achievements Slideshow Screenshot](./public/pictures/Achievements/AURO/Auro.jpg)
+## 📸 Home Page Preview
+![Home Page Screen Shot ](image-1.png)
 
 ---
 
@@ -72,9 +71,9 @@ This is not just a portfolio—it's a living, breathing showcase of my journey a
 
 ## 🤝 Connect With Me
 
-- [LinkedIn](https://www.linkedin.com/in/yourprofile)
+- [LinkedIn](https://sidh-profolio.vercel.app/)
 - [Twitter](https://twitter.com/yourhandle)
-- [Email](mailto:your.email@example.com)
+- [Email](mailto:your.sharansidh0301@gmail.com)
 
 ---
 
