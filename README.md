@@ -65,13 +65,13 @@ This is not just a portfolio—it's a living, breathing showcase of my journey a
 
 ## 🌐 Live Demo
 
-[View Portfolio Live](https://your-portfolio-demo-link.com)
+[View Portfolio Live](https://sidh-profolio.vercel.app/)
 
 ---
 
 ## 🤝 Connect With Me
 
-- [LinkedIn](https://sidh-profolio.vercel.app/)
+- [LinkedIn](https://www.linkedin.com/in/sharansidh0301/)
 - [Twitter](https://twitter.com/yourhandle)
 - [Email](mailto:your.sharansidh0301@gmail.com)
 
