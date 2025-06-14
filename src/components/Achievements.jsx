@@ -11,13 +11,7 @@ import Slider from "react-slick";
 
 export const Achievements = () => {
   
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    };
+   
 
     const data = [
         {
@@ -46,26 +40,7 @@ export const Achievements = () => {
     return (
     <>
    
-    <div className='w-3/4 m-auto'>
-     
-       <div className='mt-80'>
-        <h2 className='text-3xl font-bold text-center '>Acheivements</h2>
-             <Slider {...settings}>
-                {data.map((d)=>(
-                    <div className='rounded-xl  h-140'>
-                        <div className='h-120 rounded-t-xl flex justify-center items-center '> 
-                            <img src={d.img} alt="" className='h-90 w-150 rounded-2xl'/>
-                        </div>
-                        <div className='amarante-regular text-4xl -mt-10 flex flex-col justify-center items-center p-5'>
-                         <p>{d.content}</p>
-                        </div>
-                    </div>
-                ))}
-             </Slider>
-
-        </div>
-        </div>
-   
+    
     </>
   )
 }

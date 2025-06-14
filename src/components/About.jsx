@@ -57,9 +57,6 @@ export const About = () => {
         <SocialLink href="mailto:sharansidh0301@gmail.com" icon={gmail} alt="Gmail" />
     </div>
     </div>
-
-   
-
     </>
   )
 }
