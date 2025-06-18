@@ -1,20 +1,20 @@
-import Django from '../assets/Django.png';
-import git from '../assets/GitHub.png';
-import Java from '../assets/Java.png';
-import JS from '../assets/JavaScript.png';
-import MongoDB from '../assets/MongoDB.png';
-import MySQL from '../assets/MySQL.png';
-import Python from '../assets/Python.png';
-import react from '../assets/React.png';
-import Node from '../assets/Node.js.png';
-import npm from '../assets/NPM.png'
-import Tailwind from '../assets/Tailwind.png';
-import Vite from '../assets/Vite.js.png';
-import Eclipse from '../assets/Eclipse.png';
-import Linux from '../assets/Linux.png';
-import Anaconda from '../assets/Anaconda.png';
-import './Tech.css';
-import '../index.css'
+import Django from "../assets/Django.png";
+import git from "../assets/GitHub.png";
+import Java from "../assets/Java.png";
+import JS from "../assets/JavaScript.png";
+import MongoDB from "../assets/MongoDB.png";
+import MySQL from "../assets/MySQL.png";
+import Python from "../assets/Python.png";
+import react from "../assets/React.png";
+import Node from "../assets/Node.js.png";
+import npm from "../assets/NPM.png";
+import Tailwind from "../assets/Tailwind.png";
+import Vite from "../assets/Vite.js.png";
+import Eclipse from "../assets/Eclipse.png";
+import Linux from "../assets/Linux.png";
+import Anaconda from "../assets/Anaconda.png";
+import "./Tech.css";
+import "../index.css";
 
 function TechItem({ src, alt, name }) {
   return (
@@ -52,4 +52,4 @@ export const Tech = () => {
       </div>
     </div>
   );
-}
+};

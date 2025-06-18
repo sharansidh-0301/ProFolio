@@ -1,14 +1,24 @@
-import './Tech.css';
+import "./Tech.css";
 function ProjectCard({ title, description, Codelink, Sitelink }) {
   return (
     <div className="pro-box bg-gray-100 p-6 rounded-lg shadow-md flex flex-col h-full">
       <h3 className="text-xl font-semibold mb-4">{title}</h3>
       <p className="text-gray-600 mb-4 flex-1">{description}</p>
       <div className="flex justify-between items-center mt-auto">
-        <a href={Codelink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+        <a
+          href={Codelink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:underline"
+        >
           Source Code
         </a>
-        <a href={Sitelink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+        <a
+          href={Sitelink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:underline"
+        >
           View Site
         </a>
       </div>
@@ -46,4 +56,4 @@ export const ReactSection = () => {
       </div>
     </div>
   );
-}
+};
