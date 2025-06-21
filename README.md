@@ -27,7 +27,7 @@ This is not just a portfolio—it's a living, breathing showcase of my journey a
 ---
 
 ## 📸 Home Page Preview
-![Home Page Screen Shot ](home.png)
+![Home Page Screen Shot ](src/assets/home.png)
 
 ---
 
