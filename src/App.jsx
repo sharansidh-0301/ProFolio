@@ -6,7 +6,6 @@ import { ReactSection } from "./components/ReactSection.jsx";
 import "./App.css";
 import { Footer } from "./components/Footer.jsx";
 import { About } from "./components/About.jsx";
-import { Achievements } from "./components/Achievements.jsx";
 
 function App() {
   return (
