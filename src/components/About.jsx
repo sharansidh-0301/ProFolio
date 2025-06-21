@@ -1,7 +1,7 @@
 import "../App.css";
-import git from "../assets/githubIcon.png";
-import linkedin from "../assets/linkedin.png";
-import gmail from "../assets/gmail.png";
+import git from "../assets/TechIcons/githubIcon.png";
+import linkedin from "../assets/TechIcons/linkedin.png";
+import gmail from "../assets/TechIcons/gmail.png";
 import TypeWriter from "typewriter-effect";
 
 function SocialLink({ href, icon, alt }) {

@@ -1,4 +1,4 @@
-import Sidh from "../assets/sidh.jpg";
+import Sidh from "../assets/MyPics/sidh.jpg";
 import Sidh_pdf from "../assets/Sidh.pdf";
 import { useState } from "react";
 
