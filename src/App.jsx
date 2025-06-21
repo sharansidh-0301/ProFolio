@@ -14,7 +14,7 @@ function App() {
       <Bg />
       <main className=" pt-20 mx-auto ">
         
-      <div className="text-red-900 text-center border-b-2 mx-auto w-40">Site Under Working</div>
+      <div className="text-red-500 font-semibold text-center "> ----Site Under Working----</div>
         {/* Home & About Section */}
         <section className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           <div className="w-full lg:w-1/2 lg:my-10 lg:ml-10 flex justify-center ">
