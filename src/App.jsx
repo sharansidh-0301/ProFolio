@@ -34,7 +34,7 @@ function App() {
           <ReactSection />
         </section>
 
-        <Achievements />
+       
 
         {/* Footer Section */}
         <section id="footer" className="mt-100">
