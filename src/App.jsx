@@ -7,6 +7,7 @@ import "./App.css";
 import { Footer } from "./components/Footer.jsx";
 import { About } from "./components/About.jsx";
 import { Achievements } from "./components/Achievements.jsx";
+import { Certifications } from "./components/Certifications.jsx";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         
         <Achievements/>
 
+        <Certifications/>
         {/* Footer Section */}
         <section id="footer" className="mt-100">
           <Footer />

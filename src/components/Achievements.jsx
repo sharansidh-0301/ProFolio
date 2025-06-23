@@ -88,7 +88,7 @@ export const Achievements = () => {
 
   return (
     <div className="w-full flex flex-col items-center py-10">
-      <h2 className="text-3xl font-bold mb-8 text-indigo-700 text-center">Achievements</h2>
+      <h2 className="text-4xl font-extrabold text-center mt-8 mb-10 text-slate-800 drop-shadow">Achievements</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 justify-items-center">
         {data.map((d, idx) => (
           <div key={idx} className="bg-white/50 backdrop-blur rounded-xl shadow-xl p-6 w-100 flex flex-col items-center hover:scale-105 transition-transform duration-300">

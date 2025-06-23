@@ -29,7 +29,7 @@ export const Tech = () => {
   return (
     <div className="skill-section py-8 px-2 sm:px-4 md:px-8" id="tech">
       <div className="rounded-lg">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mt-8 mb-8 sm:mt-12 sm:mb-12">
+        <h2 className="text-4xl font-extrabold text-center mt-8 mb-10 text-slate-800 drop-shadow">
           Technologies I Work With
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6 lg:gap-8">
