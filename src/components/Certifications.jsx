@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-
+import ccna1 from '../assets/Certifications/ccna1.png';
+import ccna2 from '../assets/Certifications/ccna2.png';
+import excel from '../assets/Certifications/excel.png';
+import sql from '../assets/Certifications/skillrack.png';
+import iot from '../assets/Certifications/iot.jpg';
 const certificates = [
    {
     title: "CCNA: Switching, Routing, and Wireless Essentials",
     issuer: "Cisco Networking Academy",
     date: "June 2025",
-    img: "/certificates/ccna-switching-routing.jpg",
+    img: ccna2,
     link: "https://www.netacad.com/certificates?issuanceId=9fd860a4-2bfe-4e5b-95ae-146b198840a8",
     description: "Completed the second course in the CCNA series with 70 hours of hands-on training in switching, routing protocols, and wireless technologies under instructor Arunkumar M.",
   },
@@ -13,7 +17,7 @@ const certificates = [
     title: "CCNA: Introduction to Networks",
     issuer: "Cisco Networking Academy",
     date: "July 2024",
-    img: "/certificates/ccna-intro.jpg",
+    img: ccna1,
     link: "https://www.netacad.com/certificates?issuanceId=b659d016-b1e2-4f0f-999f-3cbc598aa4dd",
     description: "Successfully completed foundational networking course covering network architecture, protocols, and models under instructor Matilda S.",
   },
@@ -21,7 +25,7 @@ const certificates = [
     title: "SQL Fundamentals - Skillrack",
     issuer: "Skillrack",
     date: "2024",
-    img: "/certificates/sql-skillrack.jpg",
+    img: sql,
     link: "https://www.skillrack.com/faces/candidate/certificates.xhtml",
     description: "Learned SQL basics, including query writing, table creation, and relational database handling with hands-on tasks.",
   },
@@ -29,10 +33,17 @@ const certificates = [
     title: "Using Basic Formulas and Functions in Microsoft Excel",
     issuer: "Coursera",
     date: "2024",
-    img: "/certificates/excel-formulas.jpg",
+    img: excel,
     link: "https://coursera.org/verify/excel-formulas-functions",
     description: "Completed a practical course on Microsoft Excel to perform calculations, apply formulas, and automate tasks using core spreadsheet features.",
-  }
+  },
+  {
+  title: "Inplant Training on Industry 4.0 and Embedded Systems",
+  issuer: "TVS Training & Services Ltd",
+  date: "February 2025",
+  img: iot,
+  description: "Completed a 10-day inplant training focused on Industry 4.0 concepts and Embedded Systems, including 8051 microcontroller architecture, electronics fundamentals, IoT device interfacing, and real-time applications.",
+}
 ];
 
 export const Certifications = () => {
@@ -54,7 +65,7 @@ export const Certifications = () => {
             >
               {/* Issuer Badge */}
               <div className="absolute -top-5 left-1/2 -translate-x-1/2 z-10">
-                <span className="inline-block px-4 py-2 bg-gradient-to-r from-amber-950 to-red-400 text-white rounded-full shadow text-xs font-bold tracking-wide border-2 border-white">
+                <span className="inline-block px-4 w-50 text-center py-2 bg-gradient-to-r from-amber-950 to-red-400 text-white rounded-full shadow text-xs font-bold tracking-wide border-2 border-white">
                   {cert.issuer}
                 </span>
               </div>
@@ -82,39 +93,45 @@ export const Certifications = () => {
         </div>
 
         {/* Modal Preview */}
-        {openIdx !== null && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-2">
-            <div className="relative bg-white/90 backdrop-blur-2xl rounded-3xl shadow-2xl p-8 max-w-md w-full animate-[fadeIn_0.3s_ease] border border-indigo-100">
-              <button
-                className="absolute top-3 right-3 text-2xl text-slate-400 hover:text-indigo-600"
-                onClick={() => setOpenIdx(null)}
-                aria-label="Close"
-              >
-                &times;
-              </button>
-              <img
-                src={certificates[openIdx].img}
-                alt={certificates[openIdx].title}
-                className="w-56 h-56 object-cover rounded-xl mx-auto mb-4 border-2 border-indigo-100 shadow"
-              />
-              <h3 className="text-2xl font-bold text-indigo-700 mb-2 text-center">{certificates[openIdx].title}</h3>
-              <div className="text-center text-slate-500 text-sm mb-2">
-                {certificates[openIdx].issuer} &middot; {certificates[openIdx].date}
-              </div>
-              <p className="text-gray-700 text-center mb-4">{certificates[openIdx].description}</p>
-              <div className="flex justify-center">
-                <a
-                  href={certificates[openIdx].link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-lg shadow hover:from-indigo-600 hover:to-purple-600 transition"
-                >
-                  Open Certificate
-                </a>
-              </div>
-            </div>
-          </div>
-        )}
+    {openIdx !== null && (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-2">
+    <div className="relative bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl p-0 max-w-4xl w-full animate-[fadeIn_0.3s_ease] border border-indigo-100 flex flex-col items-center overflow-hidden">
+      {/* Close Button */}
+      <button
+        className="absolute top-4 right-4 text-3xl text-slate-400 hover:text-indigo-600 z-10"
+        onClick={() => setOpenIdx(null)}
+        aria-label="Close"
+      >
+        &times;
+      </button>
+      {/* Certificate Image Large */}
+      <div className="w-full flex justify-center items-center bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-6 md:p-10">
+        <img
+          src={certificates[openIdx].img}
+          alt={certificates[openIdx].title}
+          className="w-full max-w-2xl h-auto max-h-[70vh] object-contain rounded-2xl border-2 border-indigo-100 shadow-lg"
+        />
+      </div>
+      {/* Details */}
+      <div className="w-full px-6 pb-8 flex flex-col items-center">
+        <h3 className="text-2xl md:text-3xl font-bold text-indigo-700 mt-4 mb-2 text-center">{certificates[openIdx].title}</h3>
+        <div className="text-center text-slate-500 text-base mb-2">
+          <span className="font-semibold">{certificates[openIdx].issuer}</span>
+          {certificates[openIdx].date && <> &middot; {certificates[openIdx].date}</>}
+        </div>
+        <p className="text-gray-700 text-center mb-6 text-base md:text-lg max-w-2xl">{certificates[openIdx].description}</p>
+        <a
+          href={certificates[openIdx].link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-xl shadow hover:from-indigo-600 hover:to-purple-600 transition text-lg font-semibold"
+        >
+          Open Certificate
+        </a>
+      </div>
+    </div>
+  </div>
+)}
       </div>
     </section>
   );
