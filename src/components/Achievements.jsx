@@ -5,86 +5,98 @@ import ideathon from '../assets/ACHIVEMENTS/ideathon/certificate1.jpg';
 import mec from '../assets/ACHIVEMENTS/mec/pic11.jpg';
 import vec from '../assets/ACHIVEMENTS/vec/pic.jpg';
 import isro from '../assets/ACHIVEMENTS/ISRO/team.jpeg';
+import candid from '../assets/ACHIVEMENTS/sih/candid.jpg';
+import interview1 from '../assets/ACHIVEMENTS/sih/interview1.jpg';
+import interview2 from '../assets/ACHIVEMENTS/sih/interview2.jpg';
+import poster from '../assets/ACHIVEMENTS/sih/poster.jpg';
+import review from '../assets/ACHIVEMENTS/sih/review.jpeg';
+import review2 from '../assets/ACHIVEMENTS/sih/review2.jpeg';
+import isro2 from '../assets/ACHIVEMENTS/ISRO/isro1.jpeg';
+import isro3 from '../assets/ACHIVEMENTS/ISRO/team2.jpeg';
 import './Tech.css';
 
 // Example: Add an `extraImgs` array for each achievement if you want more images in the slider
 export const Achievements = () => {
   const data = [
-    {
-      img: momentum,
-      extraImgs: [
-        momentum,
-        "/pictures/Achievements/MEC/certificate2.jpg", // Example: add more related images
-      ],
-      title: "SIH'2023 Finalist",
-      content: "Shortlisted to SIH-2023 Grand Final Hardware Edition",
-      details:
-        "During my internship at AURO, I led a team project that improved workflow efficiency by 30%. I received recognition for my leadership and technical skills.",
-    },
-    {
-      img: ideathon,
-      extraImgs: [
-        ideathon,
-        "/pictures/Achievements/MEC/certificate2.jpg",
-      ],
-      title: "Ideathon Winner",
-      content: "Won 2nd Prize in Ideathon (Idea Presentation)",
-      details:
-        "Presented an innovative idea at Ideathon and secured the 2nd prize among 100+ teams.",
-    },
-    {
-      img: mec,
-      extraImgs: [
-        mec,
-        "/pictures/Achievements/MEC/certificate2.jpg",
-      ],
-      title: "Paper Presentation",
-      content: "Won 1st Prize in Paper Presentation",
-      details:
-        "Awarded 1st prize for presenting a technical paper at MEC Symposium.",
-    },
-    {
-      img: vec,
-      extraImgs: [
-        vec,
-        "/pictures/Achievements/MEC/certificate2.jpg",
-      ],
-      title: "Paper Presentation",
-      content: "Won 3rd Prize in Paper Presentation",
-      details:
-        "Achieved 3rd prize for an impactful paper presentation at VEC.",
-    },
-    {
-      img: auro,
-      extraImgs: [
-        auro,
-        "/pictures/Achievements/MEC/certificate2.jpg",
-      ],
-      title: "Best Intern",
-      content: "Appreciated as Best intern at AURO.",
-      details:
-        "During my internship at AURO, I led a team project that improved workflow efficiency by 30%. I received recognition for my leadership and technical skills.",
-    },
-    {
-      img: isro,
-      extraImgs: [
-        isro,
-        mec,
-      ],
-      title: "ISRO Presentation",
-      content: "Won 2nd Prize in Adzap",
-      details:
-        "Secured 2nd place in the Adzap event for creative marketing strategies.",
-    },
+     {
+  img: momentum,
+  extraImgs: [
+    momentum, review, review2 ,interview2, interview1, poster, candid, 
+    
+  ],
+  title: "SIH 2023 Finalist",
+  content: "Finalist in Smart India Hackathon 2023 (Hardware Edition)",
+  details:
+    "Represented IFET College of Engineering as a finalist in Smart India Hackathon 2023 (Hardware Edition), held at Galgotias University, Noida, New Delhi. The 5-day event took place from December 19 to 24, 2023. Our team developed and demonstrated a working prototype of the 'Sewage Gas Monitoring and Neutralization System' – a solution designed to detect harmful gases in sewage pipelines and neutralize them using automated embedded control. The project was recognized for its real-world impact, efficiency, and scalability.",
+},
+  {
+    img: ideathon,
+    extraImgs: [
+      ideathon,
+      "/pictures/Achievements/IFET/ideathon_certificate.jpg",
+    ],
+    title: "Ideathon Winner",
+    content: "2nd Prize – Ideathon at IFET College of Engineering",
+    details:
+      "Won 2nd prize at the Ideathon organized by IFET College of Engineering. The event was a 1-day inter-college competition involving over 100+ teams. I presented an innovative project titled 'Sustainable Orchards by Integrating AI and Blockchain', focusing on transforming agriculture through intelligent automation, disease prediction, and blockchain-enabled traceability for apple orchards.",
+  },
+  {
+    img: mec,
+    extraImgs: [
+      mec,
+      "/pictures/Achievements/MEC/sewage_certificate.jpg",
+    ],
+    title: "Paper Presentation Winner",
+    content: "1st Prize – Paper Presentation at Mailam Engineering College",
+    details:
+      "Secured 1st prize in a 1-day national-level symposium conducted at Mailam Engineering College on March 20, 2025. Presented the project 'Sewage Gas Monitoring and Neutralization System', which detects harmful gases using sensors and neutralizes them with an automated embedded mechanism. Appreciated for its real-world impact and system reliability.",
+  },
+  {
+    img: vec,
+    extraImgs: [
+      vec,
+    ],
+    title: "Paper Presentation – VEC",
+    content: "3rd Prize – Paper Presentation at Velammal Engineering College, Ambattur",
+    details:
+      "Awarded 3rd prize at a 1-day symposium hosted by Velammal Engineering College, Ambattur. Presented the project 'FIR Fencing System', an IoT-based intrusion detection system that instantly sends FIR alerts upon unauthorized entry. The concept stood out for its smart public safety application and rapid response mechanism.",
+  },
+  {
+    img: auro,
+    extraImgs: [
+      auro,
+
+    ],
+    title: "Digital Marketing Intern – AURO",
+    content: "15-Day Internship at AURO Creative Studio, Puducherry",
+    details:
+      "Completed a 15-day internship in digital marketing at AURO Creative Studio, Puducherry. Gained hands-on experience in SEO optimization, social media planning, and creative content development. Each task sharpened my communication and brand strategy skills. Mr. Karn Parekh, Co-Founder, appreciated my commitment and gifted me a thoughtful token of appreciation on successful completion.",
+  },
+  {
+    img: isro,
+    extraImgs: [
+      isro,
+      isro2,isro3,
+    ],
+    title: "ISRO Panel Member",
+    content: "Panelist – ISRO Project Explanation Event at IFET",
+    details:
+      "Appointed as a panel member for a 3-day ISRO exhibition event conducted at IFET College of Engineering from October 4 to 6, 2023. I represented the team in explaining ISRO’s satellite, rover, and propulsion-related projects to students, faculty, and dignitaries. The event was organized to ignite interest in space science and innovation among young learners.",
+  }
   ];
 
   const [openIdx, setOpenIdx] = useState(null);
   const [slideIdx, setSlideIdx] = useState(0);
 
-  // Reset slider when modal opens
   React.useEffect(() => {
-    setSlideIdx(0);
-  }, [openIdx]);
+  if (openIdx !== null) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+  return () => { document.body.style.overflow = "auto"; };
+}, [openIdx]);
+
 
   return (
     <div className="w-full flex flex-col items-center py-10">
@@ -107,18 +119,21 @@ export const Achievements = () => {
 
       {openIdx !== null && (
   <div
-    className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-2"
-    tabIndex={-1}
-    onKeyDown={e => {
-      if (e.key === "Escape") setOpenIdx(null);
-      if (e.key === "ArrowLeft" && data[openIdx].extraImgs?.length > 1)
-        setSlideIdx(prev => prev === 0 ? data[openIdx].extraImgs.length - 1 : prev - 1);
-      if (e.key === "ArrowRight" && data[openIdx].extraImgs?.length > 1)
-        setSlideIdx(prev => prev === data[openIdx].extraImgs.length - 1 ? 0 : prev + 1);
-    }}
-    autoFocus
+  className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-2"
+  tabIndex={-1}
+  onKeyDown={e => {
+    if (e.key === "Escape") setOpenIdx(null);
+    if (e.key === "ArrowLeft" && data[openIdx].extraImgs?.length > 1)
+      setSlideIdx(prev => prev === 0 ? data[openIdx].extraImgs.length - 1 : prev - 1);
+    if (e.key === "ArrowRight" && data[openIdx].extraImgs?.length > 1)
+      setSlideIdx(prev => prev === data[openIdx].extraImgs.length - 1 ? 0 : prev + 1);
+  }}
+  autoFocus
+>
+   <div
+    className="relative max-w-9xl w-[90vw] h-[42rem] bg-white/80 backdrop-blur-2xl rounded-xl shadow-2xl border-4 border-purple-300 p-0 overflow-hidden animate-[fadeIn_0.3s_ease] flex"
+    style={{ minHeight: "32rem" }}
   >
-    <div className="relative w-full max-w-6xl bg-white/80 backdrop-blur-2xl rounded-xl shadow-2xl border-4 border-purple-300 p-0 overflow-hidden animate-[fadeIn_0.3s_ease]">
       {/* Close Button */}
       <button
         className="absolute top-4 right-4 text-4xl text-purple-400 hover:text-purple-700 transition z-10"
@@ -141,10 +156,10 @@ export const Achievements = () => {
         <span role="img" aria-label="Share">🔗</span>
       </button>
       {/* Modal Content */}
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row w-full h-full overflow-y-auto">
         {/* Image Slider */}
         <div
-          className="relative flex-1 flex flex-col items-center justify-center bg-gradient-to-br from-purple-100 via-white to-indigo-100 p-10"
+          className="relative flex-1 flex flex-col items-center justify-center bg-gradient-to-br from-purple-100 via-white to-indigo-100 p-10 h-full"
           onTouchStart={e => (window._touchStartX = e.touches[0].clientX)}
           onTouchEnd={e => {
             const dx = e.changedTouches[0].clientX - window._touchStartX;
@@ -188,7 +203,7 @@ export const Achievements = () => {
           <img
             src={data[openIdx].extraImgs ? data[openIdx].extraImgs[slideIdx] : data[openIdx].img}
             alt={data[openIdx].title}
-            className="w-[28rem] h-[28rem] max-w-full max-h-[60vh] object-cover rounded-2xl shadow-2xl border-4 border-white transition-all duration-500"
+            className="w-[52rem] h-[32rem] max-w-full max-h-[60vh] object-cover rounded-2xl shadow-2xl border-4 border-white transition-all duration-500"
             style={{ animation: "fadeIn .4s" }}
           />
           {/* Dots */}
@@ -205,19 +220,18 @@ export const Achievements = () => {
           )}
         </div>
         {/* Details */}
-        <div className="flex-1 flex flex-col justify-center p-10">
+        <div className="flex-1 flex flex-col justify-center p-10 h-full overflow-y-auto">
           {/* Achievement Badge */}
           <div className="flex justify-center mb-4">
             <span className="inline-block px-4 py-1 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full shadow text-lg font-semibold tracking-wide">
               {data[openIdx].title}
             </span>
           </div>
-          <h3 className="text-5xl font-extrabold text-purple-700 mb-6 text-center drop-shadow">{data[openIdx].content}</h3>
-          <p className="text-gray-700 text-center mb-8 text-2xl">{data[openIdx].details}</p>
-          {/* Add more info or links here if needed */}
+          <h3 className="text-3xl font-extrabold text-purple-700 mb-4 text-center drop-shadow">{data[openIdx].content}</h3>
+          <p className="text-gray-700 text-center mb-6 text-lg">{data[openIdx].details}</p>
           <div className="flex justify-center gap-4">
             <button
-              className="mt-2 px-12 py-4 bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-xl shadow-lg text-xl font-bold hover:scale-105 hover:from-purple-700 hover:to-indigo-600 transition-all duration-200"
+              className="mt-2 px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-xl shadow-lg text-lg font-bold hover:scale-105 hover:from-purple-700 hover:to-indigo-600 transition-all duration-200"
               onClick={() => setOpenIdx(null)}
             >
               Close
