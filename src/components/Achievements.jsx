@@ -4,6 +4,7 @@ import momentum from '../assets/ACHIVEMENTS/sih/momentum.jpg';
 import ideathon from '../assets/ACHIVEMENTS/ideathon/certificate1.jpg';
 import mec from '../assets/ACHIVEMENTS/mec/pic11.jpg';
 import vec from '../assets/ACHIVEMENTS/vec/pic.jpg';
+import isro from '../assets/ACHIVEMENTS/ISRO/team.jpeg';
 import './Tech.css';
 
 // Example: Add an `extraImgs` array for each achievement if you want more images in the slider
@@ -65,12 +66,12 @@ export const Achievements = () => {
         "During my internship at AURO, I led a team project that improved workflow efficiency by 30%. I received recognition for my leadership and technical skills.",
     },
     {
-      img: "/pictures/Achievements/MEC/certificate2.jpg",
+      img: isro,
       extraImgs: [
-        "/pictures/Achievements/MEC/certificate2.jpg",
+        isro,
         mec,
       ],
-      title: "Adzap",
+      title: "ISRO Presentation",
       content: "Won 2nd Prize in Adzap",
       details:
         "Secured 2nd place in the Adzap event for creative marketing strategies.",
