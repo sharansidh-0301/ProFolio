@@ -6,6 +6,7 @@ import { ReactSection } from "./components/ReactSection.jsx";
 import "./App.css";
 import { Footer } from "./components/Footer.jsx";
 import { About } from "./components/About.jsx";
+import { Achievements } from "./components/Achievements.jsx";
 
 function App() {
   return (
@@ -34,14 +35,15 @@ function App() {
         <section id="project" className="mt-10 sm:mt-12 md:mt-16">
           <ReactSection />
         </section>
-
-       
+        
+        <Achievements/>
 
         {/* Footer Section */}
         <section id="footer" className="mt-100">
           <Footer />
         </section>
       </main>
+      
     </>
   );
 }
