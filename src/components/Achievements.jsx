@@ -67,10 +67,10 @@ export const Achievements = () => {
       auro,
 
     ],
-    title: "Digital Marketing Intern – AURO",
+    title: "Best Intern – AURO",
     content: "15-Day Internship at AURO Creative Studio, Puducherry",
     details:
-      "Completed a 15-day internship in digital marketing at AURO Creative Studio, Puducherry. Gained hands-on experience in SEO optimization, social media planning, and creative content development. Each task sharpened my communication and brand strategy skills. Mr. Karn Parekh, Co-Founder, appreciated my commitment and gifted me a thoughtful token of appreciation on successful completion.",
+      "Completed a 15-day internship in digital marketing at AURO Creative Studio, Puducherry. Gained hands-on experience in social media planning, and creative content development. Each task sharpened my communication and brand strategy skills. Mr. Karn Parekh, Co-Founder, appreciated my commitment and gifted me a thoughtful token of appreciation on successful completion.",
   },
   {
     img: isro,
