@@ -95,7 +95,7 @@ export const Certifications = () => {
         {/* Modal Preview */}
     {openIdx !== null && (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-2">
-    <div className="relative bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl p-0 max-w-4xl w-full animate-[fadeIn_0.3s_ease] border border-indigo-100 flex flex-col items-center overflow-hidden">
+    <div className="relative bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl max-w-3xl w-full h-[38rem] flex flex-col items-center overflow-hidden border border-indigo-100 animate-[fadeIn_0.3s_ease]">
       {/* Close Button */}
       <button
         className="absolute top-4 right-4 text-3xl text-slate-400 hover:text-indigo-600 z-10"
@@ -105,15 +105,17 @@ export const Certifications = () => {
         &times;
       </button>
       {/* Certificate Image Large */}
-      <div className="w-full flex justify-center items-center bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-6 md:p-10">
+      <div className="w-full flex justify-center items-center bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-6 md:p-10"
+           style={{ height: "18rem" }}>
         <img
           src={certificates[openIdx].img}
           alt={certificates[openIdx].title}
-          className="w-full max-w-2xl h-auto max-h-[70vh] object-contain rounded-2xl border-2 border-indigo-100 shadow-lg"
+          className="max-h-full max-w-full object-contain rounded-2xl border-2 border-indigo-100 shadow-lg"
+          style={{ height: "100%", width: "auto" }}
         />
       </div>
       {/* Details */}
-      <div className="w-full px-6 pb-8 flex flex-col items-center">
+      <div className="w-full flex-1 px-6 pb-8 flex flex-col items-center justify-center">
         <h3 className="text-2xl md:text-3xl font-bold text-indigo-700 mt-4 mb-2 text-center">{certificates[openIdx].title}</h3>
         <div className="text-center text-slate-500 text-base mb-2">
           <span className="font-semibold">{certificates[openIdx].issuer}</span>
