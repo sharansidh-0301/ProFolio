@@ -30,7 +30,6 @@ export const About = () => {
                   "Full Stack Developer",
                   "Software Engineer",
                   "Network Engineer",
-                  "Cloud Enthusiast",
                 ],
                 autoStart: true,
                 loop: true,
