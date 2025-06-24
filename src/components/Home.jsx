@@ -50,13 +50,13 @@ export const Home = () => {
           href={Sidh_pdf}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-5 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-xl shadow hover:from-indigo-600 hover:to-purple-600 transition text-sm font-semibold mb-2"
+          className="px-5 py-2 bg-gradient-to-r cursor-pointer from-indigo-500 to-purple-500 text-white rounded-xl shadow hover:from-indigo-600 hover:to-purple-600 transition text-sm font-semibold mb-2"
         >
           Download CV
         </a>
         <button
           onClick={toggleModal}
-          className="px-5 py-2 bg-slate-200 text-indigo-700 rounded-xl shadow hover:bg-red-500 hover:text-white transition text-sm font-semibold"
+          className="px-5 py-2 cursor-pointer bg-slate-200 text-indigo-700 rounded-xl shadow hover:bg-red-500 hover:text-white transition text-sm font-semibold"
         >
           Close
         </button>
@@ -92,26 +92,26 @@ export const Home = () => {
           <h2 className="text-lg font-semibold text-indigo-600 mb-1">Key Skills</h2>
           <div className="flex flex-wrap gap-2">
             <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">React</span>
-            <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">JavaScript</span>
-            <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">Tailwind CSS</span>
-            <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">Python</span>
             <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">Django</span>
-            <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">Embedded Systems</span>
+            <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">Tailwind CSS</span>
+            <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">Java</span>
+            <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">Python</span>
+            <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">AI Model Training</span>
           </div>
         </div>
         <div>
           <h2 className="text-lg font-semibold text-indigo-600 mb-1">Interests</h2>
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">Web Development</span>
+            <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">Product Development</span>
+            <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">Web Developement</span>
             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">IoT</span>
-            <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">Open Source</span>
             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">Tech Communities</span>
           </div>
         </div>
       </div>
       {/* Close Button for mobile */}
       <button
-        className="absolute top-4 right-4 text-2xl text-slate-400 hover:text-red-500 transition-all duration-200 z-10 md:hidden"
+        className="absolute  top-4 right-4 text-2xl text-slate-400 hover:text-red-500 transition-all duration-200 z-10 md:hidden"
         onClick={toggleModal}
         aria-label="Close"
       >

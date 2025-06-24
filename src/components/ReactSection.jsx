@@ -136,9 +136,9 @@ export const ReactSection = () => {
           Featured Projects
         </h2>
         {/* Filter Box */}
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
+        <div className="flex flex-wrap  justify-center gap-3 mb-10">
           <button
-            className={`px-4 py-2 rounded-full font-semibold shadow transition-all ${
+            className={`px-4 py-2 cursor-pointer rounded-full font-semibold shadow transition-all ${
               selectedTech === "All"
                 ? "bg-indigo-400 text-white scale-105"
                 : "bg-white text-indigo-700 border border-slate-200 hover:bg-slate-50"
@@ -150,7 +150,7 @@ export const ReactSection = () => {
           {filterOptions.map((tech) => (
             <button
               key={tech}
-              className={`px-4 py-2 rounded-full font-semibold shadow transition-all ${
+              className={`px-4 py-2 cursor-pointer rounded-full font-semibold shadow transition-all ${
                 selectedTech === tech
                   ? "bg-indigo-400 text-white scale-105"
                   : "bg-white text-indigo-700 border border-slate-200 hover:bg-slate-50"

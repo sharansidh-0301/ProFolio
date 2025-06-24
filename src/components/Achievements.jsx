@@ -16,7 +16,7 @@ import isro3 from '../assets/ACHIVEMENTS/ISRO/team2.jpeg';
 import './Tech.css';
 
 // Example: Add an `extraImgs` array for each achievement if you want more images in the slider
-export const Achievements = () => {
+export   const Achievements = () => {
   const data = [
      {
   img: momentum,
@@ -33,18 +33,18 @@ export const Achievements = () => {
     img: ideathon,
     extraImgs: [
       ideathon,
-      "/pictures/Achievements/IFET/ideathon_certificate.jpg",
+      
     ],
     title: "Ideathon Winner",
     content: "2nd Prize – Ideathon at IFET College of Engineering",
     details:
-      "Won 2nd prize at the Ideathon organized by IFET College of Engineering. The event was a 1-day inter-college competition involving over 100+ teams. I presented an innovative project titled 'Sustainable Orchards by Integrating AI and Blockchain', focusing on transforming agriculture through intelligent automation, disease prediction, and blockchain-enabled traceability for apple orchards.",
+      "Won 2nd prize at the Ideathon organized by IFET College of Engineering. The event was a 1-day inter-college competition and I presented an innovative project titled 'Sustainable Orchards by Integrating AI and Blockchain', focusing on transforming agriculture through intelligent automation, disease prediction, and blockchain-enabled traceability for apple orchards.",
   },
   {
     img: mec,
     extraImgs: [
       mec,
-      "/pictures/Achievements/MEC/sewage_certificate.jpg",
+      
     ],
     title: "Paper Presentation Winner",
     content: "1st Prize – Paper Presentation at Mailam Engineering College",
@@ -65,7 +65,6 @@ export const Achievements = () => {
     img: auro,
     extraImgs: [
       auro,
-
     ],
     title: "Best Intern – AURO",
     content: "15-Day Internship at AURO Creative Studio, Puducherry",
@@ -108,7 +107,7 @@ export const Achievements = () => {
             <h3 className="text-lg font-semibold mb-1">{d.title}</h3>
             <p className="text-gray-600 mb-2 text-center">{d.content}</p>
             <button
-              className="text-sm text-white bg-gradient-to-r from-purple-500 to-indigo-500 px-4 py-2 rounded-full shadow hover:from-purple-600 hover:to-indigo-600 transition-all"
+              className="text-sm cursor-pointer text-white bg-gradient-to-r from-purple-500 to-indigo-500 px-4 py-2 rounded-full shadow hover:from-purple-600 hover:to-indigo-600 transition-all"
               onClick={() => setOpenIdx(idx)}
             >
               Click to learn more
@@ -136,7 +135,7 @@ export const Achievements = () => {
   >
       {/* Close Button */}
       <button
-        className="absolute top-4 right-4 text-4xl text-purple-400 hover:text-purple-700 transition z-10"
+        className="absolute cursor-pointer top-4 right-4 text-4xl text-purple-400 hover:text-purple-700 transition z-10"
         onClick={() => setOpenIdx(null)}
         aria-label="Close"
       >
@@ -173,7 +172,7 @@ export const Achievements = () => {
           {data[openIdx].extraImgs && data[openIdx].extraImgs.length > 1 && (
             <>
               <button
-                className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-purple-100 text-purple-700 rounded-full p-4 shadow transition"
+                className="absolute left-2 top-1/2 cursor-pointer -translate-y-1/2 bg-white/80 hover:bg-purple-100 text-purple-700 rounded-full p-4 shadow transition"
                 onClick={() =>
                   setSlideIdx(prev =>
                     prev === 0
@@ -186,7 +185,7 @@ export const Achievements = () => {
                 &#8592;
               </button>
               <button
-                className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-purple-100 text-purple-700 rounded-full p-4 shadow transition"
+                className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-purple-100 text-purple-700 rounded-full p-4 shadow transition"
                 onClick={() =>
                   setSlideIdx(prev =>
                     prev === data[openIdx].extraImgs.length - 1
@@ -231,7 +230,7 @@ export const Achievements = () => {
           <p className="text-gray-700 text-center mb-6 text-lg">{data[openIdx].details}</p>
           <div className="flex justify-center gap-4">
             <button
-              className="mt-2 px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-xl shadow-lg text-lg font-bold hover:scale-105 hover:from-purple-700 hover:to-indigo-600 transition-all duration-200"
+              className="mt-2 cursor-pointer px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-xl shadow-lg text-lg font-bold hover:scale-105 hover:from-purple-700 hover:to-indigo-600 transition-all duration-200"
               onClick={() => setOpenIdx(null)}
             >
               Close

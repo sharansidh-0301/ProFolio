@@ -56,7 +56,7 @@ export const Certifications = () => {
           <span className="text-4xl font-extrabold text-center mt-8 mb-10 text-slate-800 drop-shadow">Certifications</span>
         </h2>
         {/* Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
           {certificates.map((cert, idx) => (
             <div
               key={idx}
@@ -80,7 +80,7 @@ export const Certifications = () => {
               <span className="text-xs text-slate-400 mb-2">{cert.date}</span>
               <p className="text-gray-600 text-center text-sm mb-3 line-clamp-3">{cert.description}</p>
               <button
-                className="mt-2 px-4 py-1 bg-gradient-to-r bg-red-500 text-white rounded-lg shadow hover:from-indigo-500 hover:to-purple-500 transition"
+                className="mt-2 px-4 py-1 cursor-pointer bg-gradient-to-r bg-red-500 text-white rounded-lg shadow hover:from-indigo-500 hover:to-purple-500 transition"
                 onClick={e => {
                   e.stopPropagation();
                   window.open(cert.link, "_blank");
