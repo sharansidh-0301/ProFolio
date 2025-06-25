@@ -152,7 +152,7 @@ export   const Achievements = () => {
         }}
         aria-label="Share"
       >
-        <span role="img" aria-label="Share">🔗</span>
+        <span role="img" aria-label="Share"></span>
       </button>
       {/* Modal Content */}
       <div className="flex flex-col md:flex-row w-full h-full overflow-y-auto">
