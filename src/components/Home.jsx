@@ -34,7 +34,7 @@ export const Home = () => {
         />
         <h1 className="text-2xl font-bold text-indigo-700 mb-1 text-center">Sharan Sidh</h1>
         <span className="text-sm text-slate-500 mb-2 text-center">B.E. ECE (Hons), 2022–2026</span>
-        <span className="text-xs text-slate-400 mb-4 text-center">Chennai, India</span>
+        <span className="text-xs text-slate-400 mb-4 text-center">Villupuram, India</span>
         <div className="flex gap-3 mb-4">
           <a href="mailto:sharan.sidh@email.com" className="text-indigo-500 hover:text-indigo-700" aria-label="Email">
             <i className="fas fa-envelope text-lg"></i>
