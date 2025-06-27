@@ -83,6 +83,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-> “The best way to predict the future is to invent it.” – Alan Kay
+> “The best way to predict the future is to invent it.” – Alan Kay 
 
 ---
