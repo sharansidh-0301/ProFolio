@@ -29,6 +29,7 @@ export const About = () => {
                 strings: [
                   "Full Stack Developer",
                   "Software Engineer",
+                  "AI Learner",
                   "Network Engineer",
                 ],
                 autoStart: true,
