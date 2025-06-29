@@ -21,8 +21,7 @@ This is not just a portfolio—it's a living, breathing showcase of my journey a
 - [React](https://react.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Slick Carousel](https://react-slick.neostack.com/)
-- [React Icons](https://react-icons.github.io/react-icons/)## Credits
-- Background animation by [Chris Smith](https://codepen.io/chris22smith/pen/RZogMa). Used under fair use for personal/portfolio display purposes.
+- [React Icons](https://react-icons.github.io/react-icons/)
 - Passion, curiosity, and a dash of caffeine ☕
 
 ---
@@ -78,11 +77,19 @@ This is not just a portfolio—it's a living, breathing showcase of my journey a
 
 ---
 
-## 📄 License
+## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
 
----
+You may use, modify, and share this project for personal or educational use, as long as proper credit is given and no commercial use is made.
+
+🔗 License: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+
+## Credits
+
+- Background animation by [Chris Smith](https://codepen.io/chris22smith/pen/RZogMa)  
+  Used under fair-use for non-commercial personal portfolio. All rights remain with the author.
+
 
 > “The best way to predict the future is to invent it.” – Alan Kay 
 
