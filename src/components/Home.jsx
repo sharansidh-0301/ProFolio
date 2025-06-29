@@ -77,7 +77,7 @@ export const Home = () => {
               <div className="absolute -left-3 top-1 w-5 h-5 bg-purple-400 rounded-full border-2 border-white shadow"></div>
               <span className="text-sm text-slate-500">2020–2022</span>
               <div className="font-semibold text-indigo-700">Higher Secondary</div>
-              <div className="text-xs text-slate-500">Vivekanda Hr Sec School, Sholavandan, Madurai</div>
+              <div className="text-xs text-slate-500">Vivekanda Hr Sec School, Thiruvedagam, Madurai</div>
             </li>
             <li>
               <div className="absolute -left-3 top-1 w-5 h-5 bg-amber-400 rounded-full border-2 border-white shadow"></div>
