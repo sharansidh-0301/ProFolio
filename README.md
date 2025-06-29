@@ -1,4 +1,6 @@
-# 🚀 Sharan's Interactive Portfolio
+# My Personal Portfolio
+![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)
+---
 
 Welcome to my digital playground!  
 This is not just a portfolio—it's a living, breathing showcase of my journey as a developer, innovator, and lifelong learner.
@@ -83,14 +85,18 @@ This project is licensed under the Creative Commons Attribution-NonCommercial 4.
 
 You may use, modify, and share this project for personal or educational use, as long as proper credit is given and no commercial use is made.
 
+© 2025 sharansidh-0301
+
 🔗 License: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
-![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)
+
+---
+
 ## Credits
 
 - Background animation by [Chris Smith](https://codepen.io/chris22smith/pen/RZogMa)  
   Used under fair-use for non-commercial personal portfolio. All rights remain with the author.
 
-
+---
 
 > “The best way to predict the future is to invent it.” – Alan Kay 
 
