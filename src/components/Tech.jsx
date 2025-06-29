@@ -33,7 +33,7 @@ const techList = [
   { icon: <FaNpm className="text-red-600" />, name: "NPM" },
   { icon: <SiVite className="text-purple-500" />, name: "Vite.js" },
   { icon: <SiEclipseide className="text-yellow-200" />, name: "Eclipse" },
-  { icon: <FaLinux className="text-green-600 " />, name: "Linux" },
+  { icon: <FaLinux className="text-green-600 " />, name: "Linux" },    
   { icon: <SiAnaconda className="text-green-700" />, name: "Anaconda" },
 ];
 
@@ -42,7 +42,7 @@ function TechItem({ icon, name, idx }) {
   return (
     <div
       className={`tech-card group relative flex flex-col items-center justify-center p-6 rounded-2xl shadow-xl
-        bg-white dark:bg-slate-900 overflow-hidden
+        bg-slate-900 overflow-hidden
         transition-all duration-300 hover:scale-110 hover:shadow-xl hover:z-10`}
       style={{
         animation: `fadeInUp 0.7s cubic-bezier(.39,.575,.565,1) both`,
@@ -50,10 +50,10 @@ function TechItem({ icon, name, idx }) {
       }}
       title={name}
     >
-      <span className="relative z-10 text-5xl mb-2 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-300 text-slate-900 dark:text-emerald-100">
+      <span className="relative z-10 text-5xl mb-2 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-300 text-emerald-100">
         {icon}
       </span>
-      <span className="relative z-10 text-base font-semibold text-slate-900 dark:text-emerald-100 transition-all duration-300">
+      <span className="relative z-10 text-base font-semibold text-emerald-100  transition-all duration-300">
         {name}
       </span>
       {/* Animated border glow on hover */}
