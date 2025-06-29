@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { name: "Home", href: "" },
+  { name: "Home", href: " " },
   { name: "Skills", href: "#tech" },
   { name: "Projects", href: "#project" },
-  { name: "Contact", href: "#footer" },
-  { name: "About", href: "#about" },
   { name: "Achievements", href: "#achievements" },
   { name: "Certifications", href: "#certifications" },
+  { name: "Contact", href: "#footer" },
 ];
 
 export const NavBar = () => {

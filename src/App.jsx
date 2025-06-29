@@ -34,10 +34,14 @@ function App() {
         <section id="project" className="mt-10 sm:mt-12 md:mt-16">
           <ProjectSection />
         </section>
-        
-        <Achievements/>
-
+        <section id="achievements">
+         <Achievements/>
+        </section>
+       
+       <section id="certifications" className="mt-10 sm:mt-12 md:mt-16"> 
         <Certifications/>
+       </section>
+        
         {/* Footer Section */}
         <section id="footer" className="mt-100">
           <Footer />
