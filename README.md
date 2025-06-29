@@ -22,10 +22,8 @@ This is not just a portfolio—it's a living, breathing showcase of my journey a
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Slick Carousel](https://react-slick.neostack.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
+- Background animation adapted from Chris Smith on CodePen: https://codepen.io/chris22smith/pen/RZogMa
 - Passion, curiosity, and a dash of caffeine ☕
-- 
-Background animation adapted from Chris Smith on CodePen: https://codepen.io/chris22smith/pen/RZogMa
-
 
 ---
 
