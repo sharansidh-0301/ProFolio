@@ -1,15 +1,36 @@
 import React, { useState } from "react";
 import "./Tech.css";
-import { FaGithub, FaExternalLinkAlt, FaReact, FaPython, FaJava, FaJs, FaCss3Alt } from "react-icons/fa";
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+  FaReact,
+  FaPython,
+  FaJava,
+  FaJs,
+  FaCss3Alt,
+  FaHtml5,
+  FaDatabase,
+  FaCloud,
+  FaJava as FaJavaIcon,
+  FaLinux,
+} from "react-icons/fa";
+import { SiTailwindcss, SiDjango, SiMongodb, SiMysql, SiEclipseide } from "react-icons/si";
 
 const techIcons = {
   React: <FaReact className="text-sky-500" />,
-  Django: <FaPython className="text-green-700" />,
+  Django: <SiDjango className="text-green-700" />,
   Python: <FaPython className="text-yellow-500" />,
-  Java: <FaJava className="text-red-700" />,
+  Java: <FaJavaIcon className="text-red-700" />,
   JavaScript: <FaJs className="text-yellow-400" />,
-  Tailwind: <FaCss3Alt className="text-teal-400" />,
-  API: <FaExternalLinkAlt className="text-indigo-400" />,
+  Tailwind: <SiTailwindcss className="text-teal-400" />,
+  API: <FaCloud className="text-indigo-400" />,
+  HTML: <FaHtml5 className="text-orange-500" />,
+  CSS: <FaCss3Alt className="text-blue-500" />,
+  MongoDB: <SiMongodb className="text-green-600" />,
+  MySQL: <SiMysql className="text-blue-700" />,
+  Eclipse: <SiEclipseide className="text-indigo-700" />,
+  Linux: <FaLinux className="text-black" />,
+  GitHub: <FaGithub className="text-gray-800" />,
 };
 
 
