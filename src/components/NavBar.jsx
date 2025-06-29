@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 
-
-
 const navLinks = [
-  { name: "Home", href: "#" },
+  { name: "Home", href: "#home" },
   { name: "Skills", href: "#tech" },
   { name: "Projects", href: "#project" },
   { name: "Achievements", href: "#achievements" },
@@ -16,24 +14,44 @@ export const NavBar = () => {
   const [active, setActive] = useState("Home");
   const [scrolled, setScrolled] = useState(false);
 
+  // Update active nav based on scroll position
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+      let found = false;
+      for (let i = navLinks.length - 1; i >= 0; i--) {
+        const link = navLinks[i];
+        if (link.href !== "#" && link.href.startsWith("#")) {
+          const section = document.querySelector(link.href);
+          if (section) {
+            const rect = section.getBoundingClientRect();
+            // Section is considered active if its top is above 80px from viewport top
+            if (rect.top <= 380) {
+              setActive(link.name);
+              found = true;
+              break;
+            }
+          }
+        }
+      }
+      if (!found) setActive("Home");
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
- const handleNavClick = (name, href) => {
-  setActive(name);
-  setMenuOpen(false);
-  if (href === "#") {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  } else if (href && href.startsWith("#")) {
-    const el = document.querySelector(href);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+  const handleNavClick = (name, href) => {
+    setActive(name);
+    setMenuOpen(false);
+    if (href === "#" || href === "#home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else if (href && href.startsWith("#")) {
+      const el = document.querySelector(href);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
     }
-  }
-};
+  };
 
   return (
     <>
@@ -126,7 +144,6 @@ export const NavBar = () => {
                 </button>
               </li>
             ))}
-            
           </ul>
         </div>
       </nav>
