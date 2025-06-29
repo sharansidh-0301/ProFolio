@@ -116,26 +116,26 @@ export   const Achievements = () => {
         ))}
       </div>
 
-      {openIdx !== null && (
+    {openIdx !== null && (
   <div
-  className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-2"
-  tabIndex={-1}
-  onKeyDown={e => {
-    if (e.key === "Escape") setOpenIdx(null);
-    if (e.key === "ArrowLeft" && data[openIdx].extraImgs?.length > 1)
-      setSlideIdx(prev => prev === 0 ? data[openIdx].extraImgs.length - 1 : prev - 1);
-    if (e.key === "ArrowRight" && data[openIdx].extraImgs?.length > 1)
-      setSlideIdx(prev => prev === data[openIdx].extraImgs.length - 1 ? 0 : prev + 1);
-  }}
-  autoFocus
->
-   <div
-    className="relative max-w-9xl w-[90vw] h-[42rem] bg-white/80 backdrop-blur-2xl rounded-xl shadow-2xl border-4 border-purple-300 p-0 overflow-hidden animate-[fadeIn_0.3s_ease] flex"
-    style={{ minHeight: "32rem" }}
+    className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-1 sm:px-2"
+    tabIndex={-1}
+    onKeyDown={e => {
+      if (e.key === "Escape") setOpenIdx(null);
+      if (e.key === "ArrowLeft" && data[openIdx].extraImgs?.length > 1)
+        setSlideIdx(prev => prev === 0 ? data[openIdx].extraImgs.length - 1 : prev - 1);
+      if (e.key === "ArrowRight" && data[openIdx].extraImgs?.length > 1)
+        setSlideIdx(prev => prev === data[openIdx].extraImgs.length - 1 ? 0 : prev + 1);
+    }}
+    autoFocus
   >
+    <div
+      className="relative w-full max-w-9xl md:w-[90vw] h-[90vh] md:h-[42rem] bg-white/80 backdrop-blur-2xl rounded-xl shadow-2xl border-4 border-purple-300 p-0 overflow-hidden animate-[fadeIn_0.3s_ease] flex flex-col md:flex-row items-center md:items-stretch"
+      style={{ minHeight: "22rem" }}
+    >
       {/* Close Button */}
       <button
-        className="absolute cursor-pointer top-4 right-4 text-4xl text-purple-400 hover:text-purple-700 transition z-10"
+        className="absolute cursor-pointer top-3 right-3 text-3xl md:text-4xl text-purple-400 hover:text-purple-700 transition z-10"
         onClick={() => setOpenIdx(null)}
         aria-label="Close"
       >
@@ -143,7 +143,7 @@ export   const Achievements = () => {
       </button>
       {/* Share Button */}
       <button
-        className="absolute top-4 left-4 text-xl bg-white/70 hover:bg-purple-100 text-purple-700 rounded-full px-4 py-2 shadow transition z-10"
+        className="absolute top-3 left-3 text-base md:text-xl bg-white/70 hover:bg-purple-100 text-purple-700 rounded-full px-3 md:px-4 py-1 md:py-2 shadow transition z-10"
         onClick={() => {
           navigator.clipboard.writeText(
             `${data[openIdx].title}\n${data[openIdx].details}`
@@ -155,10 +155,10 @@ export   const Achievements = () => {
         <span role="img" aria-label="Share">🔗</span>
       </button>
       {/* Modal Content */}
-      <div className="flex flex-col md:flex-row w-full h-full overflow-y-auto">
+      <div className="flex flex-col md:flex-row w-full h-full items-center md:items-stretch overflow-y-auto">
         {/* Image Slider */}
         <div
-          className="relative flex-1 flex flex-col items-center justify-center bg-gradient-to-br from-purple-100 via-white to-indigo-100 p-10 h-full"
+          className="relative flex-1 flex flex-col items-center justify-center bg-gradient-to-br from-purple-100 via-white to-indigo-100 p-4 sm:p-8 h-full min-h-[14rem]"
           onTouchStart={e => (window._touchStartX = e.touches[0].clientX)}
           onTouchEnd={e => {
             const dx = e.changedTouches[0].clientX - window._touchStartX;
@@ -172,7 +172,7 @@ export   const Achievements = () => {
           {data[openIdx].extraImgs && data[openIdx].extraImgs.length > 1 && (
             <>
               <button
-                className="absolute left-2 top-1/2 cursor-pointer -translate-y-1/2 bg-white/80 hover:bg-purple-100 text-purple-700 rounded-full p-4 shadow transition"
+                className="absolute left-2 top-1/2 cursor-pointer -translate-y-1/2 bg-white/80 hover:bg-purple-100 text-purple-700 rounded-full p-2 sm:p-4 shadow transition"
                 onClick={() =>
                   setSlideIdx(prev =>
                     prev === 0
@@ -185,7 +185,7 @@ export   const Achievements = () => {
                 &#8592;
               </button>
               <button
-                className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-purple-100 text-purple-700 rounded-full p-4 shadow transition"
+                className="absolute right-2 top-1/2 cursor-pointer -translate-y-1/2 bg-white/80 hover:bg-purple-100 text-purple-700 rounded-full p-2 sm:p-4 shadow transition"
                 onClick={() =>
                   setSlideIdx(prev =>
                     prev === data[openIdx].extraImgs.length - 1
@@ -200,18 +200,18 @@ export   const Achievements = () => {
             </>
           )}
           <img
-            src={data[openIdx].extraImgs ? data[openIdx].extraImgs[slideIdx] : data[openIdx].img}
-            alt={data[openIdx].title}
-            className="w-[52rem] h-[32rem] max-w-full max-h-[60vh] object-cover rounded-2xl shadow-2xl border-4 border-white transition-all duration-500"
-            style={{ animation: "fadeIn .4s" }}
-          />
+  src={data[openIdx].extraImgs ? data[openIdx].extraImgs[slideIdx] : data[openIdx].img}
+  alt={data[openIdx].title}
+  className="w-full h-48 sm:h-64 md:h-[28rem] lg:h-[32rem] max-w-full max-h-[60vh] object-cover rounded-2xl shadow-2xl border-4 border-white transition-all duration-500"
+  style={{ animation: "fadeIn .4s" }}
+/>
           {/* Dots */}
           {data[openIdx].extraImgs && data[openIdx].extraImgs.length > 1 && (
             <div className="flex gap-2 mt-4">
               {data[openIdx].extraImgs.map((_, i) => (
                 <span
                   key={i}
-                  className={`w-4 h-4 rounded-full border-2 border-purple-400 ${i === slideIdx ? "bg-purple-600" : "bg-purple-200"} inline-block cursor-pointer`}
+                  className={`w-3 h-3 rounded-full border-2 border-purple-400 ${i === slideIdx ? "bg-purple-600" : "bg-purple-200"} inline-block cursor-pointer`}
                   onClick={() => setSlideIdx(i)}
                 />
               ))}
@@ -219,18 +219,17 @@ export   const Achievements = () => {
           )}
         </div>
         {/* Details */}
-        <div className="flex-1 flex flex-col justify-center p-10 h-full overflow-y-auto">
-          {/* Achievement Badge */}
-          <div className="flex justify-center mb-4">
-            <span className="inline-block px-4 py-1 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full shadow text-lg font-semibold tracking-wide">
+        <div className="flex-1 flex flex-col justify-center p-4 sm:p-8 h-full min-h-[14rem]">
+          <div className="flex justify-center mb-3">
+            <span className="inline-block px-4 py-1 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full shadow text-base sm:text-lg font-semibold tracking-wide">
               {data[openIdx].title}
             </span>
           </div>
-          <h3 className="text-3xl font-extrabold text-purple-700 mb-4 text-center drop-shadow">{data[openIdx].content}</h3>
-          <p className="text-gray-700 text-center mb-6 text-lg">{data[openIdx].details}</p>
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-purple-700 mb-3 text-center drop-shadow">{data[openIdx].content}</h3>
+          <p className="text-gray-700 text-center mb-4 text-sm sm:text-base md:text-lg">{data[openIdx].details}</p>
           <div className="flex justify-center gap-4">
             <button
-              className="mt-2 cursor-pointer px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-xl shadow-lg text-lg font-bold hover:scale-105 hover:from-purple-700 hover:to-indigo-600 transition-all duration-200"
+              className="mt-2 cursor-pointer px-6 py-2 sm:px-8 sm:py-3 bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-xl shadow-lg text-base sm:text-lg font-bold hover:scale-105 hover:from-purple-700 hover:to-indigo-600 transition-all duration-200"
               onClick={() => setOpenIdx(null)}
             >
               Close
