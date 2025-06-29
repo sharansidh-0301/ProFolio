@@ -33,7 +33,7 @@ const techList = [
   { icon: <FaJava className="text-red-700" />, name: "Java" },
   { icon: <SiVite className="text-purple-500" />, name: "Vite.js" },
   { icon: <SiEclipseide className="text-yellow-200" />, name: "Eclipse" },
-  { icon: <FaLinux className="text-amber-500 " />, name: "Linux" },       // changed
+  { icon: <FaLinux className="text-green-600 " />, name: "Linux" },       // changed
   { icon: <SiAnaconda className="text-green-700" />, name: "Anaconda" },
 ];
 
@@ -69,7 +69,7 @@ export const Tech = () => {
       {/* Modern radial gradient background */}
       <div className="absolute inset-0 -z-10 pointer-events-none bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-100 via-sky-100 to-white dark:from-slate-900 dark:via-emerald-900 dark:to-slate-900 transition-colors duration-500"></div>
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center mt-8 mb-12 text-slate-800 dark:text-emerald-200 drop-shadow">
+        <h2 className="text-4xl font-extrabold text-center mt-8 mb-10 text-slate-800 drop-shadow ">
           Technologies I Work With
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-7 md:gap-10">

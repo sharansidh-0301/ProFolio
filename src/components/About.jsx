@@ -18,7 +18,7 @@ export const About = () => {
       <div className="text-center">
         <div>
           <p className="text-lg font-semibold">Hello, I'm</p>
-          <p className="work-sans-bold  text-5xl text-yellow-950 border-amber-950 ">
+          <p className="work-sans-bold  text-5xl font-extrabold text-center text-slate-800 drop-shadow">
             SHARAN SIDH Jr
           </p>
           <div className="mt-3 ">
@@ -37,9 +37,9 @@ export const About = () => {
                 deleteSpeed: 50,
                 delay: 100,
                 cursor: "|",
-                cursorClassName: "text-gray-700 text-6xl font-semibold",
+                cursorClassName: "text-6xl font-semibold text-slate-800 drop-shadow",
                 wrapperClassName:
-                  "work-sans-bold  text-5xl inline-block text-indigo-700",
+                  "work-sans-bold  text-5xl inline-block text-indigo-700 drop-shadow",
               }}
             />
           </div>

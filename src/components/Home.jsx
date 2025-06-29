@@ -129,9 +129,9 @@ export const Home = () => {
             <img src={Sidh} alt="Profile" className=" rounded-md " />
           </div>
           <div className="degree text-center mb-4">
-            <p className="aladin-regular text-3xl">
+            <p className="aladin-regular    text-3xl">
               {" "}
-              <span className=" border-t-2"> BE </span>- ECE{" "}
+              <span className="  border-t-2"> BE </span>- ECE{" "}
               <span className="font-medium">(Hons)</span>
             </p>
             <p className="aubrey-regular text-3xl">2022 - 2026 </p>
