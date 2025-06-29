@@ -38,31 +38,43 @@ const techList = [
   { icon: <SiAnaconda className="text-green-700" />, name: "Anaconda" },
 ];
 
+
 function TechItem({ icon, name, idx }) {
+  const gradients = [
+    "from-pink-200 via-rose-100 to-amber-100",
+    "from-emerald-200 via-teal-100 to-sky-100",
+    "from-indigo-200 via-purple-100 to-pink-100",
+    "from-yellow-200 via-orange-100 to-red-100",
+    "from-sky-200 via-cyan-100 to-emerald-100",
+  ];
+  const gradient = gradients[idx % gradients.length];
+
   return (
     <div
-      className="tech-card group relative flex flex-col items-center justify-center p-6 rounded-2xl shadow-xl bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-emerald-100 dark:border-emerald-900 transition-all duration-300 hover:scale-110 hover:shadow-emerald-400/40 hover:z-10"
+      className={`tech-card group relative flex flex-col items-center justify-center p-6 rounded-2xl shadow-xl
+        bg-gradient-to-br ${gradient} overflow-hidden
+        transition-all duration-300 hover:scale-110 hover:shadow-xl hover:z-10`}
       style={{
         animation: `fadeInUp 0.7s cubic-bezier(.39,.575,.565,1) both`,
         animationDelay: `${idx * 0.07 + 0.1}s`,
       }}
       title={name}
     >
-      <span className="text-5xl mb-2 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-300">
+      {/* Overlay for readability */}
+      <span className="absolute inset-0 bg-white/70 dark:bg-slate-900/70 pointer-events-none" />
+      <span className="relative z-10 text-5xl mb-2 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-300 text-slate-900 dark:text-emerald-100">
         {icon}
       </span>
-      <span className="text-base font-semibold text-slate-800 dark:text-emerald-200 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors duration-300">
+      <span className="relative z-10 text-base font-semibold text-slate-900 dark:text-emerald-100 transition-all duration-300">
         {name}
       </span>
-      {/* Tooltip */}
-      <span className="absolute bottom-16 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 pointer-events-none bg-emerald-700 text-white text-xs rounded px-2 py-1 transition-all duration-300 shadow-lg z-20">
-        {name}
-      </span>
+      {/* Animated border glow on hover */}
+      <span className="pointer-events-none absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-emerald-400 group-hover:shadow-[0_0_24px_4px_rgba(16,185,129,0.25)] transition-all duration-300"></span>
     </div>
   );
 }
 
-// ...existing code...
+
 export const Tech = () => {
   return (
     <div className="relative py-16 px-2 sm:px-4 md:px-8 overflow-hidden" id="tech">
