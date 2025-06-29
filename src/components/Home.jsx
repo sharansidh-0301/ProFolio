@@ -32,7 +32,7 @@ export const Home = () => {
           alt="Sharan Sidh"
           className="w-28 h-28 object-cover rounded-full border-4 border-indigo-200 shadow-lg mb-4"
         />
-        <h1 className="text-2xl font-bold text-indigo-700 mb-1 text-center">Sharan Sidh</h1>
+        <h1 className="text-2xl font-bold text-indigo-700 mb-1 text-center">SHARANSIDH Jr</h1>
         <span className="text-sm text-slate-500 mb-2 text-center">B.E. ECE (Hons), 2022–2026</span>
         <span className="text-xs text-slate-400 mb-4 text-center">Villupuram, India</span>
         <div className="flex gap-3 mb-4">
@@ -71,7 +71,7 @@ export const Home = () => {
               <div className="absolute -left-3 top-1 w-5 h-5 bg-indigo-400 rounded-full border-2 border-white shadow"></div>
               <span className="text-sm text-slate-500">2022–2026</span>
               <div className="font-semibold text-indigo-700">B.E. Electronics And Communication Engineering (Hons)</div>
-              <div className="text-xs text-slate-500">IFET CoLLEGE Of Engineering, Villupuram</div>
+              <div className="text-xs text-slate-500">IFET College Of Engineering, Villupuram</div>
             </li>
             <li className="mb-6">
               <div className="absolute -left-3 top-1 w-5 h-5 bg-purple-400 rounded-full border-2 border-white shadow"></div>
@@ -96,7 +96,6 @@ export const Home = () => {
             <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">Tailwind CSS</span>
             <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">Java</span>
             <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">Python</span>
-            <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">AI Model Training</span>
           </div>
         </div>
         <div>
@@ -105,6 +104,7 @@ export const Home = () => {
             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">Product Development</span>
             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">Web Developement</span>
             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">IoT</span>
+            <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-semibold">AI Model Training</span>
             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">Tech Communities</span>
           </div>
         </div>
@@ -136,9 +136,7 @@ export const Home = () => {
             </p>
             <p className="aubrey-regular text-3xl">2022 - 2026 </p>
           </div>
-          {/* <h1 className="text-3xl font-bold text-center mb-2">Hello, I'm Sharan Sidh</h1> */}
-          {/* <p className="text-center text-gray-600 mb-4">A passionate web developer with a knack for creating beautiful and functional websites.</p> */}
-
+          
           <div className="flex justify-center space-x-4">
             <button
               onClick={toggleModal}
@@ -155,11 +153,6 @@ export const Home = () => {
               Download CV
             </a>
           </div>
-
-          {/* <div className="section">
-                <h2 className="text-2xl font-semibold mt-6 mb-4">About Me</h2>
-                <p className="text-gray-600">I am a web developer with experience in building responsive and user-friendly websites. I love coding and am always eager to learn new technologies.</p>
-            </div> */}
         </div>
       </div>
     </>

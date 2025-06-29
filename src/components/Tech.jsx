@@ -20,20 +20,20 @@ import {
 import "./Tech.css";
 import "../index.css";
 const techList = [
-  { icon: <SiJavascript className="text-yellow-400" />, name: "JavaScript" },
+  { icon: <FaJava className="text-red-700" />, name: "Java" },  
+  { icon: <FaPython className="text-yellow-500" />, name: "Python" },
   { icon: <FaReact className="text-sky-500" />, name: "React" },
+  { icon: <SiDjango className="text-green-800" />, name: "Django" },
+  { icon: <SiTailwindcss className="text-teal-400" />, name: "Tailwind CSS" },
+  { icon: <SiMysql className="text-blue-700" />, name: "MySQL" },
+  { icon: <SiMongodb className="text-green-600" />, name: "MongoDB" },
+  { icon: <FaGithub className="text-white" />, name: "GitHub" },
+  { icon: <SiJavascript className="text-yellow-400" />, name: "JavaScript" },
   { icon: <FaNodeJs className="text-green-700" />, name: "Node.js" },
   { icon: <FaNpm className="text-red-600" />, name: "NPM" },
-  { icon: <FaPython className="text-yellow-500" />, name: "Python" },
-  { icon: <SiDjango className="text-green-800" />, name: "Django" },
-  { icon: <SiMongodb className="text-green-600" />, name: "MongoDB" },
-  { icon: <SiMysql className="text-blue-700" />, name: "MySQL" },
-  { icon: <SiTailwindcss className="text-teal-400" />, name: "Tailwind CSS" },
-  { icon: <FaGithub className="text-white" />, name: "GitHub" },           // changed
-  { icon: <FaJava className="text-red-700" />, name: "Java" },
   { icon: <SiVite className="text-purple-500" />, name: "Vite.js" },
   { icon: <SiEclipseide className="text-yellow-200" />, name: "Eclipse" },
-  { icon: <FaLinux className="text-green-600 " />, name: "Linux" },       // changed
+  { icon: <FaLinux className="text-green-600 " />, name: "Linux" },
   { icon: <SiAnaconda className="text-green-700" />, name: "Anaconda" },
 ];
 
