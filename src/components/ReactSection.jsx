@@ -1,5 +1,17 @@
 import React, { useState } from "react";
 import "./Tech.css";
+import { FaGithub, FaExternalLinkAlt, FaReact, FaPython, FaJava, FaJs, FaCss3Alt } from "react-icons/fa";
+
+const techIcons = {
+  React: <FaReact className="text-sky-500" />,
+  Django: <FaPython className="text-green-700" />,
+  Python: <FaPython className="text-yellow-500" />,
+  Java: <FaJava className="text-red-700" />,
+  JavaScript: <FaJs className="text-yellow-400" />,
+  Tailwind: <FaCss3Alt className="text-teal-400" />,
+  API: <FaExternalLinkAlt className="text-indigo-400" />,
+};
+
 
 const projects = [
   {
@@ -83,43 +95,81 @@ const filterOptions = [
   "API"
 ];
 
-function ProjectCard({ title, description, Codelink, Sitelink, tech }) {
+
+function ProjectCard({ title, description, Codelink, Sitelink, tech }, idx) {
+  const [showMore, setShowMore] = useState(false);
+
+  // Mark the first project as "New"
+  const isNew = idx === 0;
+
   return (
     <div className="bg-white/95 p-6 rounded-2xl shadow-lg flex flex-col h-full border border-slate-100
       transition-transform duration-300 ease-out
-      hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-indigo-200">
+      hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-indigo-200 relative group">
+      {/* "New" badge */}
+      {isNew && (
+        <span className="absolute top-3 right-3 bg-pink-500 text-white text-xs px-2 py-0.5 rounded-full font-bold animate-pulse z-10">
+          NEW
+        </span>
+      )}
+      {/* Project Title */}
       <h3 className="text-xl font-bold mb-2 text-slate-800">{title}</h3>
+      {/* Tech Stack with icons and tooltips */}
       <div className="flex flex-wrap gap-2 mb-3">
         {tech.map((t) => (
-          <span key={t} className="px-2 py-0.5 bg-indigo-100 text-indigo-600 rounded-full text-xs font-semibold">
-            {t}
+          <span
+            key={t}
+            className="flex items-center gap-1 px-2 py-0.5 bg-indigo-100 text-indigo-600 rounded-full text-xs font-semibold"
+            title={t}
+          >
+            {techIcons[t] || null} {t}
           </span>
         ))}
       </div>
-      <p className="text-gray-600 mb-4 flex-1">{description}</p>
+      {/* Description with show more/less */}
+      <p className="text-gray-600 mb-4 flex-1">
+        {description.length > 70 ? (
+          <>
+            {showMore ? description : description.slice(0, 70) + "..."}
+            <button
+              className="ml-2 text-indigo-500 underline text-xs"
+              onClick={() => setShowMore((v) => !v)}
+            >
+              {showMore ? "Show less" : "Show more"}
+            </button>
+          </>
+        ) : (
+          description
+        )}
+      </p>
+      {/* Action Buttons */}
       <div className="flex justify-between items-center mt-auto gap-2">
         <a
           href={Codelink}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-1 bg-amber-900 text-white rounded-lg shadow hover:bg-amber-700 transition"
+          className="flex items-center gap-2 px-4 py-1 bg-amber-900 text-white rounded-lg shadow hover:bg-amber-700 transition"
+          title="View Source Code"
         >
-          Source
+          <FaGithub /> Source
         </a>
         {Sitelink && (
           <a
             href={Sitelink}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-1 bg-green-600 text-white rounded-lg shadow hover:bg-green-500 transition"
+            className="flex items-center gap-2 px-4 py-1 bg-green-600 text-white rounded-lg shadow hover:bg-green-500 transition"
+            title="View Live Demo"
           >
-            Live
+            <FaExternalLinkAlt /> Live
           </a>
         )}
       </div>
     </div>
   );
 }
+
+// ...rest of ReactSection remains unchanged...
 
 export const ReactSection = () => {
   const [selectedTech, setSelectedTech] = useState("All");
@@ -169,7 +219,7 @@ export const ReactSection = () => {
             </div>
           ) : (
             filteredProjects.map((project, idx) => (
-              <ProjectCard key={idx} {...project} />
+              <ProjectCard key={idx} {...project} idx={idx} />
             ))
           )}
         </div>
