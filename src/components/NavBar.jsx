@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 
+
+
 const navLinks = [
-  { name: "Home", href: " " },
+  { name: "Home", href: "#" },
   { name: "Skills", href: "#tech" },
   { name: "Projects", href: "#project" },
   { name: "Achievements", href: "#achievements" },
@@ -20,16 +22,18 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleNavClick = (name, href) => {
-    setActive(name);
-    setMenuOpen(false);
-    if (href && href.startsWith("#")) {
-      const el = document.querySelector(href);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
+ const handleNavClick = (name, href) => {
+  setActive(name);
+  setMenuOpen(false);
+  if (href === "#") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else if (href && href.startsWith("#")) {
+    const el = document.querySelector(href);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }
+};
 
   return (
     <>
@@ -48,7 +52,7 @@ export const NavBar = () => {
               <li key={link.name}>
                 <button
                   onClick={() => handleNavClick(link.name, link.href)}
-                  className={`relative px-2 py-1 font-semibold transition-colors duration-200
+                  className={`relative px-2 py-1 cursor-pointer font-semibold transition-colors duration-200
                     ${active === link.name
                       ? "text-emerald-700"
                       : "text-gray-300"}

@@ -16,7 +16,7 @@ function App() {
       <Bg />
       <main className="  mx-auto ">
         {/* Home & About Section */}
-        <section className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+        <section id="#" className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           <div className="w-full lg:w-1/2 lg:my-10 lg:ml-10 flex justify-center ">
             <Home />
           </div>
