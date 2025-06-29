@@ -19,7 +19,6 @@ import {
 } from "react-icons/si";
 import "./Tech.css";
 import "../index.css";
-
 const techList = [
   { icon: <SiJavascript className="text-yellow-400" />, name: "JavaScript" },
   { icon: <FaReact className="text-sky-500" />, name: "React" },
@@ -30,29 +29,20 @@ const techList = [
   { icon: <SiMongodb className="text-green-600" />, name: "MongoDB" },
   { icon: <SiMysql className="text-blue-700" />, name: "MySQL" },
   { icon: <SiTailwindcss className="text-teal-400" />, name: "Tailwind CSS" },
-  { icon: <FaGithub className="text-gray-800" />, name: "GitHub" },
+  { icon: <FaGithub className="text-white" />, name: "GitHub" },           // changed
   { icon: <FaJava className="text-red-700" />, name: "Java" },
   { icon: <SiVite className="text-purple-500" />, name: "Vite.js" },
-  { icon: <SiEclipseide className="text-indigo-700" />, name: "Eclipse" },
-  { icon: <FaLinux className="text-black" />, name: "Linux" },
+  { icon: <SiEclipseide className="text-yellow-200" />, name: "Eclipse" },
+  { icon: <FaLinux className="text-amber-500 " />, name: "Linux" },       // changed
   { icon: <SiAnaconda className="text-green-700" />, name: "Anaconda" },
 ];
 
 
 function TechItem({ icon, name, idx }) {
-  const gradients = [
-    "from-pink-200 via-rose-100 to-amber-100",
-    "from-emerald-200 via-teal-100 to-sky-100",
-    "from-indigo-200 via-purple-100 to-pink-100",
-    "from-yellow-200 via-orange-100 to-red-100",
-    "from-sky-200 via-cyan-100 to-emerald-100",
-  ];
-  const gradient = gradients[idx % gradients.length];
-
   return (
     <div
       className={`tech-card group relative flex flex-col items-center justify-center p-6 rounded-2xl shadow-xl
-        bg-gradient-to-br ${gradient} overflow-hidden
+        bg-white dark:bg-slate-900 overflow-hidden
         transition-all duration-300 hover:scale-110 hover:shadow-xl hover:z-10`}
       style={{
         animation: `fadeInUp 0.7s cubic-bezier(.39,.575,.565,1) both`,
@@ -60,8 +50,6 @@ function TechItem({ icon, name, idx }) {
       }}
       title={name}
     >
-      {/* Overlay for readability */}
-      <span className="absolute inset-0 bg-white/70 dark:bg-slate-900/70 pointer-events-none" />
       <span className="relative z-10 text-5xl mb-2 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-300 text-slate-900 dark:text-emerald-100">
         {icon}
       </span>

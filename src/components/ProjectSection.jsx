@@ -192,7 +192,7 @@ function ProjectCard({ title, description, Codelink, Sitelink, tech }, idx) {
 
 // ...rest of ReactSection remains unchanged...
 
-export const ReactSection = () => {
+export const ProjectSection = () => {
   const [selectedTech, setSelectedTech] = useState("All");
 
   const filteredProjects =

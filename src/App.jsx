@@ -2,7 +2,7 @@ import { Bg } from "./components/Bg.jsx";
 import { NavBar } from "./components/NavBar.jsx";
 import { Home } from "./components/Home.jsx";
 import { Tech } from "./components/Tech.jsx";
-import { ReactSection } from "./components/ReactSection.jsx";
+import { ProjectSection } from "./components/ProjectSection.jsx";
 import "./App.css";
 import { Footer } from "./components/Footer.jsx";
 import { About } from "./components/About.jsx";
@@ -32,7 +32,7 @@ function App() {
 
         {/* Projects Section */}
         <section id="project" className="mt-10 sm:mt-12 md:mt-16">
-          <ReactSection />
+          <ProjectSection />
         </section>
         
         <Achievements/>
