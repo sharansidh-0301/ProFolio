@@ -1,5 +1,5 @@
 import Sidh from "../assets/MyPics/sidh.jpg";
-import Sidh_pdf from "../assets/Sharansidh_Software_Developer.pdf";
+import Sidh_pdf from "../assets/SHARANSIDH_Jr_Software_Developer_Resume.pdf";
 import { useState } from "react";
 
 export const Home = () => {
