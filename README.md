@@ -1,5 +1,5 @@
 # My Personal Portfolio
-![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)
+![License: CC0-1.0 License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)
 ---
 
 Welcome to my digital playground!  
@@ -81,13 +81,13 @@ This is not just a portfolio—it's a living, breathing showcase of my journey a
 
 ## License
 
-This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
+This project is licensed under the Creative Commons Legal Code CC0-1.0 License.
 
 You may use, modify, and share this project for personal or educational use, as long as proper credit is given and no commercial use is made.
 
 © 2025 sharansidh-0301
 
-🔗 License: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+🔗 License: [CC0-1.0 License](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ---
 
