@@ -1,5 +1,5 @@
 # My Personal Portfolio
-![License: CC0-1.0 License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)
+![License: CC0 1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)
 ---
 
 Welcome to my digital playground!  
