@@ -7,6 +7,7 @@ This is not just a portfolio—it's a living, breathing showcase of my journey a
 
 ---
 
+
 ## ✨ Features
 
 - **Dynamic Hero & About Sections:** Get to know me at a glance.
