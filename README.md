@@ -7,6 +7,7 @@ This is not just a portfolio—it's a living, breathing showcase of my journey a
 
 ---
 
+
 ## ✨ Features
 
 - **Dynamic Hero & About Sections:** Get to know me at a glance.
@@ -17,6 +18,7 @@ This is not just a portfolio—it's a living, breathing showcase of my journey a
 - **Modern UI:** Crafted with React, Tailwind CSS, and slick-carousel for smooth, interactive experiences.
 
 ---
+
 
 ## 🛠️ Built With
 
