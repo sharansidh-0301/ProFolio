@@ -1,5 +1,5 @@
 import Sidh from "../assets/MyPics/sidh.jpg";
-import Sidh_pdf from "../assets/Sharansidh_Software_Developer.pdf";
+// import Sidh_pdf from "../assets/Sharansidh_Software_Developer.pdf";
 import { useState } from "react";
 
 export const Home = () => {
@@ -47,7 +47,7 @@ export const Home = () => {
           </a>
         </div>
         <a
-          href={Sidh_pdf}
+          // href={Sidh_pdf}
           target="_blank"
           rel="noopener noreferrer"
           download
@@ -146,7 +146,7 @@ export const Home = () => {
               About Me
             </button>
             <a
-              href={Sidh_pdf}
+              // href={Sidh_pdf}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-red-600 text-gray-100 px-4 py-2 rounded hover:bg-gray-400 transition duration-300"
