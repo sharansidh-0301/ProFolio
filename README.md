@@ -1,3 +1,12 @@
+# My Personal Portfolio
+![License: CC0 1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)
+---
+
+Welcome to my digital playground!  
+This is not just a portfolio—it's a living, breathing showcase of my journey as a developer, innovator, and lifelong learner.
+
+---
+
 
 ## ✨ Features
 
